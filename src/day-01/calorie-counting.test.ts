@@ -1,5 +1,6 @@
-import { assert, expect, test } from 'vitest'
+import { expect, test } from 'vitest'
 import { solution01, solution02 } from './calorie-counting'
+import { alternateSolution01 } from './calorie-counting-alternate'
 import { input } from './input'
 
 const inputSample = `1000
@@ -32,4 +33,14 @@ test('calorie-counting sol-02: sample', () => {
 
 test('calorie-counting sol-02', () => {
   expect(solution02(input)).toBe(208437)
+})
+
+// alternate: long-ass way
+
+test('calorie-counting alternate-sol-01: sample', () => {
+  expect(alternateSolution01(inputSample)).toBe(24000)
+})
+
+test('calorie-counting alternate-sol-01', () => {
+  expect(alternateSolution01(input)).toBe(69795)
 })
