@@ -1,4 +1,4 @@
-export function solution01(input: string) {
+export function partOne(input: string) {
   const elves = getElves(input)
   let biggusElfCalories = 0
 
@@ -11,7 +11,7 @@ export function solution01(input: string) {
   return biggusElfCalories
 }
 
-export function solution02(input: string) {
+export function partTwo(input: string) {
   const elves = getElves(input)
 
   // sort bigger > smaller
