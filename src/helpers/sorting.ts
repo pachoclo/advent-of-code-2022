@@ -1,4 +1,6 @@
 /**
+ * BUBBLE SORT
+ *
  * Sorts the array in-place
  *
  * @param array array of numbers to sort
@@ -23,6 +25,27 @@ export function bubbleSort(array: Array<number>): void {
 
     if (swaps === 0) {
       break
+    }
+  }
+}
+
+/**
+ * INSERTION SORT
+ *
+ * avg. O(n^2)
+ * worst. O(n^2)
+ *
+ * @param array array of numbers to sort
+ */
+export function insertionSort(array: Array<number>): void {
+  for (let i = 1; i < array.length; i++) {
+    for (let j = i; j > 0; j--) {
+      const elementA = array[j]
+      const elementB = array[j - 1]
+
+      if (elementB > elementA) {
+        swap(array, j, j - 1)
+      }
     }
   }
 }
