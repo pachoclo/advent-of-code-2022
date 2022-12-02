@@ -52,19 +52,19 @@ export function partTwo(input: string) {
     const opponentShape = decryptLetter(row.at(0)! as Encrypted) as Shape
     const roundOutcome = decryptLetter(row.at(1)! as Encrypted) as RoundOutcome
 
-    let yourShape: Shape
+    let myShape: Shape
 
     if (roundOutcome === 'LOSE') {
-      yourShape = beatsMap[opponentShape]
+      myShape = beatsMap[opponentShape]
     } else if (roundOutcome === 'WIN') {
       myTotalScore += 6
-      yourShape = beatenByMap[opponentShape]
+      myShape = beatenByMap[opponentShape]
     } else {
       myTotalScore += 3
-      yourShape = opponentShape
+      myShape = opponentShape
     }
 
-    myTotalScore += shapeScore[yourShape]
+    myTotalScore += shapeScore[myShape]
   }
 
   return myTotalScore
