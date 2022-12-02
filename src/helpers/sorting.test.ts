@@ -1,5 +1,5 @@
 import { describe, test, expect } from 'vitest'
-import { bubbleSort, insertionSort } from './sorting'
+import { bubbleSort, insertionSort, mergeSort } from './sorting'
 
 describe('bubble sort', () => {
   test('simple case', () => {
@@ -62,5 +62,37 @@ describe('insertion sort', () => {
     const testArray = [3, 1]
     insertionSort(testArray)
     expect(testArray).toStrictEqual([1, 3])
+  })
+})
+
+describe('merge sort', () => {
+  test('simple case', () => {
+    const testArray = [2, 9, 4, 6, 2, 6, 7, 2, 6]
+    const result = mergeSort(testArray)
+    expect(result).toStrictEqual([2, 2, 2, 4, 6, 6, 6, 7, 9])
+  })
+
+  test('already sorted array', () => {
+    const testArray = [2, 2, 2, 4, 6, 6, 6, 7, 9]
+    const result = mergeSort(testArray)
+    expect(result).toStrictEqual([2, 2, 2, 4, 6, 6, 6, 7, 9])
+  })
+
+  test('empty array', () => {
+    const testArray: any[] = []
+    const result = mergeSort(testArray)
+    expect(result).toStrictEqual([])
+  })
+
+  test('one element array', () => {
+    const testArray = [3]
+    const result = mergeSort(testArray)
+    expect(result).toStrictEqual([3])
+  })
+
+  test('two element array', () => {
+    const testArray = [3, 1]
+    const result = mergeSort(testArray)
+    expect(result).toStrictEqual([1, 3])
   })
 })

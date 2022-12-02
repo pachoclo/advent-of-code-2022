@@ -3,6 +3,12 @@
  *
  * Sorts the array in-place
  *
+ * Stable.
+ *
+ * best O(n)
+ * avg. O(n^2)
+ * worst O(n^2)
+ *
  * @param array array of numbers to sort
  */
 export function bubbleSort(array: Array<number>): void {
@@ -32,6 +38,11 @@ export function bubbleSort(array: Array<number>): void {
 /**
  * INSERTION SORT
  *
+ * Sorts the array in-place
+ *
+ * Stable.
+ *
+ * best O(n)
  * avg. O(n^2)
  * worst. O(n^2)
  *
@@ -48,6 +59,61 @@ export function insertionSort(array: Array<number>): void {
       }
     }
   }
+}
+
+/**
+ * Merge SORT
+ *
+ * Sorts the array with a divide and conquer strategy (i.e. NOT in-place).
+ *
+ * Recursive version.
+ *
+ * Stable.
+ *
+ * best O(n log n)
+ * avg. O(n log n)
+ * worst. O(n log n)
+ *
+ * @param array array of numbers to sort
+ */
+export function mergeSort(array: Array<number>): Array<number> {
+  // Step 00: Base Case
+  if (array.length <= 1) {
+    return array
+  }
+
+  // Step 01: Divide
+  const middleIndex = Math.ceil(array.length / 2)
+  const arrayOne = array.slice(0, middleIndex)
+  const arrayTwo = array.slice(middleIndex, array.length)
+
+  // Step 02: Conquer
+  const left = mergeSort(arrayOne)
+  const right = mergeSort(arrayTwo)
+
+  // Step 03: Merge
+  const merged = new Array<number>()
+
+  let leftIndex = 0
+  let rightIndex = 0
+  while (leftIndex < left.length && rightIndex < right.length) {
+    const leftElement = left[leftIndex]
+    const rightElement = right[rightIndex]
+
+    if (leftElement <= rightElement) {
+      merged.push(leftElement)
+      leftIndex++
+    } else {
+      merged.push(rightElement)
+      rightIndex++
+    }
+  }
+
+  // flush remaining elements
+  merged.push(...left.slice(leftIndex, left.length))
+  merged.push(...right.slice(rightIndex, right.length))
+
+  return merged
 }
 
 function swap(array: Array<number>, indexA: number, indexB: number) {
