@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest'
 import { input } from './input'
-import { partTwo } from './problem-part-two'
+import { partTwo } from './part-two'
 
 describe('day 02 - part two', () => {
   test('part two: sample', () => {

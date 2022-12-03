@@ -1,6 +1,6 @@
 import { expect, test } from 'vitest'
 import { input } from './input'
-import { partOne } from './problem-part-one'
+import { partOne } from './part-one'
 
 test('solution01: sample', () => {
   const sampleInput = `A Y

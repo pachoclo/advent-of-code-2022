@@ -1,3 +1,4 @@
+// https://adventofcode.com/2022/day/1
 export function partOne(input: string) {
   const elves = getElves(input)
   let biggusElfCalories = 0
@@ -11,6 +12,7 @@ export function partOne(input: string) {
   return biggusElfCalories
 }
 
+// https://adventofcode.com/2022/day/1#part2
 export function partTwo(input: string) {
   const elves = getElves(input)
 

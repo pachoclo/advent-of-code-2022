@@ -1,3 +1,5 @@
+// https://adventofcode.com/2022/day/3
+
 export function partOne(input: string) {
   const lines = input.split('\n').map((line) => line.trim())
 
@@ -50,6 +52,7 @@ function getItemPriority(item: string) {
 
 function findRepeatedItem(ruckSack: RuckSack) {
   const { compartment01, compartment02 } = ruckSack
+
   for (let i = 0; i < compartment01.length; i++) {
     let char01 = compartment01[i]
 
@@ -59,5 +62,6 @@ function findRepeatedItem(ruckSack: RuckSack) {
       }
     }
   }
+
   throw new Error('No repeated item found')
 }
