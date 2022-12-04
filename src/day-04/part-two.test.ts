@@ -9,7 +9,7 @@ const sampleInput = `2-4,6-8
 6-6,4-6
 2-6,4-8`
 
-describe('day 03 - part two', () => {
+describe('day 04 - part two', () => {
   test('part two: sample', () => {
     expect(partTwo(sampleInput)).toBe(4)
   })
