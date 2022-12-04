@@ -62,6 +62,14 @@ function fullyContains(pair: Pair) {
       ? [elf01.sectionIds, elf02.sectionIds]
       : [elf02.sectionIds, elf01.sectionIds]
 
+  let isOutOfRange =
+    longestRange[0] > shorterRange[shorterRange.length - 1] ||
+    shorterRange[0] > longestRange[longestRange.length - 1]
+
+  if (isOutOfRange) {
+    return false
+  }
+
   for (let sectionId of shorterRange) {
     if (!longestRange.includes(sectionId)) {
       return false
