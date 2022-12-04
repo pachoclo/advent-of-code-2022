@@ -2,15 +2,15 @@ import { describe, expect, test } from 'vitest'
 import { input } from './input'
 import { partOne } from './part-one'
 
+const sampleInput = `vJrwpWtwJgWrhcsFMMfFFhFp
+jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
+PmmdzqPrVvPwwTWBwg
+wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
+ttgJtRGJQctTZtZT
+CrZsJsPPZsGzwwsLwLmpwMDw`
+
 describe('day 03 - part one', () => {
   test('solution01: sample', () => {
-    const sampleInput = `vJrwpWtwJgWrhcsFMMfFFhFp
-    jqHRNqRjqzjGDLGLrsFMfFZSrLrFZsSL
-    PmmdzqPrVvPwwTWBwg
-    wMqvLMZHhHMvwLHjbvcjnnSBnvTQFn
-    ttgJtRGJQctTZtZT
-    CrZsJsPPZsGzwwsLwLmpwMDw`
-
     expect(partOne(sampleInput)).toBe(157)
   })
 
