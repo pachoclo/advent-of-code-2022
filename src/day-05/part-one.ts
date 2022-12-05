@@ -25,22 +25,26 @@ export async function partOne(inputFile: string) {
 // Supporting cast
 // ================
 
+type Stack = Array<string>
+
+type Procedure = {
+  quantity: number
+  from: number
+  to: number
+}
+
 function parseInput(input: string) {
-  let [cargo, proceduresBlock] = input.split('\n\n')
-  let cargoRows = cargo.split('\n')
-  let procedureStrings = proceduresBlock.split('\n')
-
-  // parse cargo stacks
-
-  let stackLabelsStr = cargoRows.pop()!
-
-  let stackLabels = new Array<number>()
-  for (let i = 0; i <= stackLabelsStr.length - 2; i += 4) {
-    let label = Number.parseInt(stackLabelsStr.substring(i, i + 3).trim())
-    stackLabels.push(label)
+  let [cargoBlock, proceduresBlock] = input.split('\n\n')
+  return {
+    stacks: getCargoStacks(cargoBlock),
+    procedures: getProcedures(proceduresBlock),
   }
+}
 
-  let numberOfStacks = stackLabels.length
+function getCargoStacks(cargoBlock: string) {
+  let cargoRows = cargoBlock.split('\n')
+  let stackLabelsStr = cargoRows.pop()!
+  let numberOfStacks = stackLabelsStr.match(/\d{1,4}/g)!.length
 
   let stacks = new Array<Stack>()
   for (let i = 0; i < numberOfStacks; i++) {
@@ -48,31 +52,26 @@ function parseInput(input: string) {
   }
 
   for (let rowNum = cargoRows.length - 1; rowNum >= 0; rowNum--) {
-    let cargoRow = cargoRows[rowNum]
+    let cargoRow = cargoRows[rowNum].match(/\s{4}|\[[A-Z]\] | \[[A-Z]\]|\[[A-Z]\]/g)!
 
-    let regex = /(\[[A-Z]\] | \[[A-Z]\])/g
-    let matches = cargoRow.match(regex)
-    console.log(matches)
-
-    for (let s = 0, i = 0; s < numberOfStacks && i <= cargoRow.length - 2; s++, i += 4) {
-      let currentStack = stacks[s]
-      let cargo = cargoRow
-        .substring(i, i + 3)
-        .trim()
-        .replace('[', '')
-        .replace(']', '')
+    for (let c = 0; c < cargoRow.length; c++) {
+      let currentStack = stacks[c]
+      let cargo = cargoRow[c].trim().replace('[', '').replace(']', '')
 
       if (cargo !== '') currentStack.push(cargo)
     }
   }
 
-  // parse procedures
+  return stacks
+}
 
+function getProcedures(proceduresBlock: string) {
+  let procedureStrings = proceduresBlock.split('\n')
   let procedures = new Array<Procedure>()
 
   for (let arrangementProcedure of procedureStrings) {
     let regex = /^move (?<quantity>\d{1,2}) from (?<from>\d{1,2}) to (?<to>\d{1,2})$/
-    let { quantity, from, to } = arrangementProcedure.match(regex)?.groups!
+    let { quantity, from, to } = arrangementProcedure.match(regex)!.groups!
 
     procedures.push({
       quantity: Number.parseInt(quantity),
@@ -81,13 +80,5 @@ function parseInput(input: string) {
     })
   }
 
-  return { stacks, procedures }
-}
-
-type Stack = Array<string>
-
-type Procedure = {
-  quantity: number
-  from: number
-  to: number
+  return procedures
 }
