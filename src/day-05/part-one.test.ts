@@ -1,15 +1,17 @@
 import { describe, expect, test } from 'vitest'
-import { input } from './input'
 import { partOne } from './part-one'
 
-const sampleInput = ``
+let sampleInputFile = 'sample-input.txt'
+let inputFile = 'input.txt'
 
 describe('day 05 - part one', () => {
-  test('part one: sample', () => {
-    expect(partOne(sampleInput)).toBe(0)
+  test('part one: sample', async () => {
+    let res = await partOne(sampleInputFile)
+    expect(res).toBe('CMZ')
   })
 
-  test('part one: solution', () => {
-    expect(partOne(input)).toBe(0)
+  test('part one: solution', async () => {
+    let res = await partOne(inputFile)
+    expect(res).toBe('WSFTMRHPP')
   })
 })
