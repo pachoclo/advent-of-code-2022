@@ -3,7 +3,7 @@ import { readFile } from 'fs/promises'
 export async function partTwo(inputFile: string) {
   let datastream = await readFile(`${__dirname}/${inputFile}`, 'utf-8')
   let fourteenLetterQueue = new Array<string>()
-  let packetStart = 0
+  let messageStart = 0
 
   for (let i = 0; i < datastream.length; i++) {
     let currentLetter = datastream[i]
@@ -21,10 +21,10 @@ export async function partTwo(inputFile: string) {
     fourteenLetterQueue.push(currentLetter)
 
     if (fourteenLetterQueue.length === 14) {
-      packetStart = i + 1
+      messageStart = i + 1
       break
     }
   }
 
-  return packetStart
+  return messageStart
 }
