@@ -12,7 +12,7 @@ describe.skip(`${day}`, () => {
     expect(res).toStrictEqual(null)
   })
 
-  test('Part One', async () => {
+  test('Part One: Solution', async () => {
     let res = await partOne(inputFile)
     expect(res).toStrictEqual(null)
   })
@@ -22,7 +22,7 @@ describe.skip(`${day}`, () => {
     expect(res).toStrictEqual(null)
   })
 
-  test('Part One', async () => {
+  test('Part Two: Solution', async () => {
     let res = await partTwo(inputFile)
     expect(res).toStrictEqual(null)
   })
