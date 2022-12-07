@@ -79,56 +79,55 @@ function parseTerminalOutput(input: string) {
 }
 
 function recreateFileSystemTree(terminalOutputLines: (Command | FileSystemNode)[]) {
+  let directoryStack = new Array<Directory>()
+  let currentDirectory = () => directoryStack.at(-1)!
+
   let root: FileSystemNode = {
     type: 'directory',
     name: '/',
     size: 0, // for now
     children: [], // for now
   }
-
-  let directoryStack = new Array<Directory>()
-  let currentDirectory = () => directoryStack.at(-1)!
-
   directoryStack.push(root)
 
   for (let line of terminalOutputLines) {
-    if (line.type === 'command') {
-      let { command, argument }: Command = line
+    if (line.type === 'command' && line.command === 'cd') {
+      let { argument }: Command = line
 
-      switch (command) {
-        case 'cd':
-          if (argument === '/') {
-            while (directoryStack.length > 1) {
-              directoryStack.pop()
-            }
-          } else if (argument === '..') {
+      switch (argument) {
+        case '/': {
+          while (directoryStack.length > 1) {
             directoryStack.pop()
-          } else if (argument !== null) {
-            let newDirectory: Directory = {
-              type: 'directory',
-              name: argument,
-              size: 0,
-              children: [],
-            }
-            currentDirectory().children.push(newDirectory)
-            directoryStack.push(newDirectory)
           }
           break
-        case 'ls':
-          continue
+        }
+        case '..': {
+          directoryStack.pop()
+          break
+        }
+        case null: {
+          throw new Error('Received cmd "cd" without arguments')
+        }
+        default: {
+          let newDirectory: Directory = {
+            type: 'directory',
+            name: argument,
+            size: 0,
+            children: [],
+          }
+          currentDirectory().children.push(newDirectory)
+          directoryStack.push(newDirectory)
+        }
       }
+      continue
     }
 
     if (line.type === 'file') {
-      let file: File = {
-        ...line,
-      }
-      currentDirectory().children.push(file)
+      currentDirectory().children.push(line)
       continue
     }
 
     if (line.type === 'directory') {
-      // do nothing??
       continue
     }
   }
@@ -145,7 +144,11 @@ function computeDirectorySizes(directory: Directory) {
   }
 }
 
-function findDirsWithSizeSmallerThan(maxSize: number, directory: Directory, smolDirs: Directory[]) {
+function findDirsWithSizeSmallerThan(
+  maxSize: number,
+  directory: Directory,
+  smolDirs: Directory[]
+) {
   if (directory.size <= maxSize) {
     smolDirs.push(directory)
   }
@@ -155,6 +158,4 @@ function findDirsWithSizeSmallerThan(maxSize: number, directory: Directory, smol
       findDirsWithSizeSmallerThan(maxSize, child, smolDirs)
     }
   }
-
-  return smolDirs
 }
