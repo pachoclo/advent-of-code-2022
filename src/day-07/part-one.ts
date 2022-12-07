@@ -7,6 +7,9 @@ export async function partOne(inputFile: string) {
   let rootDirectory = recreateFileSystemTree(terminalOutputLines)
   computeDirectorySizes(rootDirectory)
 
+  // 👇 For debugging
+  // printNodeTree(rootDirectory)
+
   let smolDirs: Directory[] = []
   findDirsWithSizeSmallerThan(100000, rootDirectory, smolDirs)
 
@@ -157,5 +160,25 @@ function findDirsWithSizeSmallerThan(
     if (child.type === 'directory') {
       findDirsWithSizeSmallerThan(maxSize, child, smolDirs)
     }
+  }
+}
+
+function printNodeTree(node: FileSystemNode, dirStack: Directory[] = []) {
+  if (node.type === 'directory') {
+    let indent = '  '.repeat(dirStack.length)
+    console.log(`${indent}- ${node.name} (dir)`)
+
+    dirStack.push(node)
+
+    for (let child of node.children.sort((nodeA, nodeB) =>
+      nodeA.name.localeCompare(nodeB.name)
+    )) {
+      printNodeTree(child, dirStack)
+    }
+
+    dirStack.pop()
+  } else if (node.type === 'file') {
+    let indent = '  '.repeat(dirStack.length)
+    console.log(`${indent}- ${node.name} (file, size=${node.size} )`)
   }
 }
