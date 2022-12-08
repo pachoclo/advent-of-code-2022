@@ -2,6 +2,7 @@ import { readFile } from 'fs/promises'
 
 export async function partTwo(inputFile: string) {
   const input = await readFile(`${__dirname}/${inputFile}`, 'utf-8')
+
   const grid: Array<Array<Tree>> = input.split('\n').map((row) =>
     row.match(/\d{1}/g)!.map((height) => ({
       height: Number.parseInt(height),
