@@ -4,6 +4,20 @@ export async function partTwo(inputFile: string) {
   const input = await readFile(`${__dirname}/${inputFile}`, 'utf-8')
   const grid = input.split('\n').map((row) => row.match(/\d{1}/g)!.map(Number))
 
+  type Tree = {
+    height: number
+    position: {
+      row: number
+      col: number
+    }
+    scores: {
+      north: number
+      south: number
+      east: number
+      west: number
+    }
+  }
+
   type GridCoordinate = string
   const visibleTrees = new Set<GridCoordinate>()
 
