@@ -17,13 +17,13 @@ describe(`${day}`, () => {
     expect(res).toStrictEqual(1698)
   })
 
-  test.only('Part Two: sample', async () => {
+  test('Part Two: sample', async () => {
     let res = await partTwo(sampleInputFile)
-    expect(res).toStrictEqual(null)
+    expect(res).toStrictEqual(8)
   })
 
-  test.skip('Part Two: Solution', async () => {
+  test('Part Two: Solution', async () => {
     let res = await partTwo(inputFile)
-    expect(res).toStrictEqual(null)
+    expect(res).toStrictEqual(672280)
   })
 })
