@@ -7,14 +7,14 @@ const sampleInputFile = 'sample-input.txt'
 const inputFile = 'input.txt'
 
 describe(`${day}`, () => {
-  test.skip('Part One: sample', async () => {
+  test('Part One: sample', async () => {
     let res = await partOne(sampleInputFile)
-    expect(res).toStrictEqual(null)
+    expect(res).toStrictEqual(13)
   })
 
-  test.skip('Part One: Solution', async () => {
+  test('Part One: Solution', async () => {
     let res = await partOne(inputFile)
-    expect(res).toStrictEqual(null)
+    expect(res).toStrictEqual(6011)
   })
 
   test.skip('Part Two: sample', async () => {
