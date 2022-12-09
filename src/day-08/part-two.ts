@@ -3,12 +3,12 @@ import { readFile } from 'fs/promises'
 export async function partTwo(inputFile: string) {
   const input = await readFile(`${__dirname}/${inputFile}`, 'utf-8')
 
-  const grid: Array<Array<Tree>> = input.split('\n').map((row) =>
-    row.match(/\d{1}/g)!.map((height) => ({
+  const grid: Array<Array<Tree>> = input.split('\n').map((row, rowIndex) =>
+    row.match(/\d{1}/g)!.map((height, colIndex) => ({
       height: Number.parseInt(height),
       position: {
-        row: 0,
-        col: 0,
+        row: rowIndex,
+        col: colIndex,
       },
       viewingDistance: {
         north: 0,
@@ -25,11 +25,6 @@ export async function partTwo(inputFile: string) {
   for (let rowIndex = 0; rowIndex < grid[0].length; rowIndex++) {
     for (let colIndex = 0; colIndex < grid[rowIndex].length; colIndex++) {
       const tree = grid[rowIndex][colIndex]
-
-      tree.position = {
-        row: rowIndex,
-        col: colIndex,
-      }
 
       // north viewing distance
       let targetRow = rowIndex - 1
