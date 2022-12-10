@@ -2,15 +2,15 @@ import { readFile } from 'fs/promises'
 
 export async function partTwo(inputFile: string) {
   const input = await readFile(`${__dirname}/${inputFile}`, 'utf-8')
-  const moves: Move[] = getMovesFromInput(input)
+  const headMoves: Move[] = getMovesFromInput(input)
 
   const initialPosition = {
     row: 0,
     col: 0,
   }
-
   const rope: Knot[] = []
   let previousKnot: Knot | null = null
+
   for (let i = 0; i < 10; i++) {
     const newKnot: Knot = new Knot({ ...initialPosition }, previousKnot)
     rope.push(newKnot)
@@ -20,39 +20,39 @@ export async function partTwo(inputFile: string) {
   const head = rope.at(0)!
   const tail = rope.at(-1)!
 
-  for (const move of moves) {
-    let { direction, steps } = move
+  for (const headMove of headMoves) {
+    const { direction, steps } = headMove
 
     for (let step = 0; step < steps; step++) {
       head.moveOneStep(direction)
 
       for (let i = 1; i < rope.length; i++) {
-        let currentKnot = rope[i]
-        let previousKnot = currentKnot.parent!
+        const currentKnot = rope[i]
+        const previousKnot = currentKnot.parent!
 
-        let vertical = currentKnot.position.row - previousKnot.position.row
-        let horizontal = currentKnot.position.col - previousKnot.position.col
+        const verticalDiff = currentKnot.position.row - previousKnot.position.row
+        const horizontalDiff = currentKnot.position.col - previousKnot.position.col
 
-        let areOverlapping =
+        const areOverlapping =
           previousKnot.position.row === currentKnot.position.row &&
           previousKnot.position.col === currentKnot.position.col
-        let areTouching = Math.abs(vertical) <= 1 && Math.abs(horizontal) <= 1
+        const areTouching = Math.abs(verticalDiff) <= 1 && Math.abs(horizontalDiff) <= 1
 
         if (areOverlapping || areTouching) {
           continue
         }
 
         // move horizontally
-        if (horizontal < 0) {
+        if (horizontalDiff < 0) {
           currentKnot.moveOneStep('R')
-        } else if (horizontal > 0) {
+        } else if (horizontalDiff > 0) {
           currentKnot.moveOneStep('L')
         }
 
         // move vertically
-        if (vertical < 0) {
+        if (verticalDiff < 0) {
           currentKnot.moveOneStep('U')
-        } else if (vertical > 0) {
+        } else if (verticalDiff > 0) {
           currentKnot.moveOneStep('D')
         }
 
@@ -79,7 +79,6 @@ type Position = {
 class Knot {
   position: Position
   visited
-  moveHistory
   parent
 
   constructor(position: Position, parent: Knot | null) {
@@ -87,8 +86,6 @@ class Knot {
     this.parent = parent
     this.visited = new Set<string>()
     this.markVisited()
-    this.moveHistory = new Array<string>()
-    this.moveHistory.push(`${this.position.row},${this.position.col}`)
   }
 
   markVisited() {
@@ -110,7 +107,6 @@ class Knot {
         this.position.col -= steps
         break
     }
-    this.moveHistory.push(`${this.position.row},${this.position.col}`)
   }
 
   moveOneStep(direction: Move['direction']) {

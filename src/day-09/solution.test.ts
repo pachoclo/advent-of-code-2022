@@ -30,6 +30,6 @@ describe(`${day}`, () => {
 
   test('Part Two: Solution', async () => {
     let res = await partTwo(inputFile)
-    expect(res).toStrictEqual(null)
+    expect(res).toStrictEqual(2419)
   })
 })
