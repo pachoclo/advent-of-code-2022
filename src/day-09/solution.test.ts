@@ -4,6 +4,7 @@ import { partTwo } from './part-two'
 
 const day = __filename.split('/').at(-2)?.toUpperCase()
 const sampleInputFile = 'sample-input.txt'
+const sampleInputFile02 = 'sample-input-02.txt'
 const inputFile = 'input.txt'
 
 describe(`${day}`, () => {
@@ -17,12 +18,17 @@ describe(`${day}`, () => {
     expect(res).toStrictEqual(6011)
   })
 
-  test.skip('Part Two: sample', async () => {
+  test('Part Two: sample one', async () => {
     let res = await partTwo(sampleInputFile)
-    expect(res).toStrictEqual(null)
+    expect(res).toStrictEqual(1)
   })
 
-  test.skip('Part Two: Solution', async () => {
+  test('Part Two: sample two', async () => {
+    let res = await partTwo(sampleInputFile02)
+    expect(res).toStrictEqual(36)
+  })
+
+  test('Part Two: Solution', async () => {
     let res = await partTwo(inputFile)
     expect(res).toStrictEqual(null)
   })
