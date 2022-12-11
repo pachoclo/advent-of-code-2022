@@ -9,15 +9,15 @@ const inputFile = 'input.txt'
 describe(`${day}`, () => {
   test('Part One: sample', async () => {
     let res = await partOne(sampleInputFile)
-    expect(res).toStrictEqual(null)
+    expect(res).toStrictEqual(13140)
   })
 
-  test.skip('Part One: Solution', async () => {
+  test('Part One: Solution', async () => {
     let res = await partOne(inputFile)
-    expect(res).toStrictEqual(null)
+    expect(res).toStrictEqual(13740)
   })
 
-  test.skip('Part Two: sample', async () => {
+  test('Part Two: sample', async () => {
     let res = await partTwo(sampleInputFile)
     expect(res).toStrictEqual(null)
   })
