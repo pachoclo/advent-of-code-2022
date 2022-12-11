@@ -18,12 +18,30 @@ describe(`${day}`, () => {
   })
 
   test('Part Two: sample', async () => {
+    let actualRes = `##..##..##..##..##..##..##..##..##..##..
+###...###...###...###...###...###...###.
+####....####....####....####....####....
+#####.....#####.....#####.....#####.....
+######......######......######......####
+#######.......#######.......#######.....`
     let res = await partTwo(sampleInputFile)
-    expect(res).toStrictEqual(null)
+    let lines = actualRes.split('\n')
+    for (let line = 0; line < lines.length; line++) {
+      expect(res[line].join('')).toStrictEqual(lines[line])
+    }
   })
 
-  test.skip('Part Two: Solution', async () => {
+  test('Part Two: Solution', async () => {
+    let actualRes = `####.#..#.###..###..####.####..##..#....
+...#.#..#.#..#.#..#.#....#....#..#.#....
+..#..#..#.#..#.#..#.###..###..#....#....
+.#...#..#.###..###..#....#....#....#....
+#....#..#.#....#.#..#....#....#..#.#....
+####..##..#....#..#.#....####..##..####.`
     let res = await partTwo(inputFile)
-    expect(res).toStrictEqual(null)
+    let lines = actualRes.split('\n')
+    for (let line = 0; line < lines.length; line++) {
+      expect(res[line].join('')).toStrictEqual(lines[line])
+    }
   })
 })
