@@ -6,11 +6,8 @@ export async function partOne(inputFile: string) {
   const { nodeGrid, startNode, endNode } = parseInput(input)
 
   calculateEdges(nodeGrid)
-  // printNodeGrid(nodeGrid)
 
-  const shortestPath = findShortestPath(startNode, endNode)
-
-  return shortestPath.length - 1
+  return findSmallestDistance(startNode, endNode)
 }
 
 // --------------------------------------------------- //
@@ -22,40 +19,40 @@ type Node = {
     row: number
     col: number
   }
-  elevation: number // should we parse this into an Integer?
+  elevation: number
   value: string
   nodeEdges: NodeEdges
 }
 
 function parseInput(input: string) {
-  const inputRows = input.split('\n')
+  const inputLines = input.split('\n')
 
   const nodeGrid = new Array<Array<Node>>()
   let startNode: Node
   let endNode: Node
 
-  for (let rowIdx = 0; rowIdx < inputRows.length; rowIdx++) {
+  for (let rowIdx = 0; rowIdx < inputLines.length; rowIdx++) {
     const nodeRow = new Array<Node>()
 
     nodeGrid.push(nodeRow)
 
-    for (let colInx = 0; colInx < inputRows[0].length; colInx++) {
-      const squareValue = inputRows[rowIdx][colInx]
+    for (let colInx = 0; colInx < inputLines[0].length; colInx++) {
+      const letter = inputLines[rowIdx][colInx]
 
       const newNode: Node = {
         position: {
           row: rowIdx,
           col: colInx,
         },
-        elevation: squareValue.charCodeAt(0),
-        value: squareValue,
+        elevation: letter.charCodeAt(0),
+        value: letter,
         nodeEdges: { north: null, south: null, west: null, east: null },
       }
 
-      if (squareValue === 'S') {
+      if (letter === 'S') {
         newNode.elevation = 'a'.charCodeAt(0)
         startNode = newNode
-      } else if (squareValue === 'E') {
+      } else if (letter === 'E') {
         newNode.elevation = 'z'.charCodeAt(0)
         endNode = newNode
       }
@@ -71,18 +68,6 @@ function parseInput(input: string) {
   }
 }
 
-function printNodeGrid(nodeGrid: Array<Array<Node>>) {
-  for (const row of nodeGrid) {
-    const lineToPrint = []
-
-    for (const node of row) {
-      lineToPrint.push(node.elevation)
-    }
-
-    console.log(lineToPrint.join(''))
-  }
-}
-
 function calculateEdges(nodeGrid: Node[][]) {
   for (let rowIdx = 0; rowIdx < nodeGrid.length; rowIdx++) {
     const row = nodeGrid[rowIdx]
@@ -90,33 +75,27 @@ function calculateEdges(nodeGrid: Node[][]) {
     for (let colIdx = 0; colIdx < row.length; colIdx++) {
       const node = nodeGrid[rowIdx][colIdx]
 
-      // find the node's edges
+      // Find the node's edges that are same or lower height
 
       const nodeEdges = node.nodeEdges
 
-      if (
-        rowIdx - 1 >= 0 &&
-        nodeGrid[rowIdx - 1][colIdx].elevation <= node.elevation + 1
-      ) {
+      if (rowIdx > 0 && nodeGrid[rowIdx - 1][colIdx].elevation <= node.elevation + 1) {
         nodeEdges.north = nodeGrid[rowIdx - 1][colIdx]
       }
 
       if (
-        rowIdx + 1 < nodeGrid.length &&
+        rowIdx < nodeGrid.length - 1 &&
         nodeGrid[rowIdx + 1][colIdx].elevation <= node.elevation + 1
       ) {
         nodeEdges.south = nodeGrid[rowIdx + 1][colIdx]
       }
 
-      if (
-        colIdx - 1 >= 0 &&
-        nodeGrid[rowIdx][colIdx - 1].elevation <= node.elevation + 1
-      ) {
+      if (colIdx > 0 && nodeGrid[rowIdx][colIdx - 1].elevation <= node.elevation + 1) {
         nodeEdges.west = nodeGrid[rowIdx][colIdx - 1]
       }
 
       if (
-        colIdx + 1 < row.length &&
+        colIdx < row.length - 1 &&
         nodeGrid[rowIdx][colIdx + 1].elevation <= node.elevation + 1
       ) {
         nodeEdges.east = nodeGrid[rowIdx][colIdx + 1]
@@ -125,39 +104,39 @@ function calculateEdges(nodeGrid: Node[][]) {
   }
 }
 
-let minPathLength = Number.MAX_SAFE_INTEGER
+function findSmallestDistance(startNode: Node, endNode: Node) {
+  // 👇 Traverse the graph using BFS
 
-function findShortestPath(from: Node, to: Node, path = new Array<Node>()): Node[] {
-  if (path.includes(from) || path.includes(to)) {
-    // already visited this node in the current path -> cycle -> no bueno 🚫
-    return []
-  }
+  // queue stores visited nodes + their depth / distance
+  let queue: [node: Node, depth: number][] = []
 
-  const localPath = [from, ...path]
+  // this set makes sure we don't visit the same node twice
+  let visited = new Set<Node>()
 
-  if (localPath.length >= minPathLength) {
-    return []
-  }
+  queue.push([startNode, 0])
+  visited.add(startNode)
 
-  if (to === from) {
-    // reached the end ✅
-    if (localPath.length < minPathLength) {
-      minPathLength === localPath.length
-      return localPath
+  while (queue.length > 0) {
+    let [currentNode, depth] = queue.shift()!
+
+    const currentDepth = depth + 1
+
+    // enqueue all valid adjacent nodes to currentNode
+    for (let adjacentNode of Object.values(currentNode.nodeEdges)) {
+      if (adjacentNode === null || visited.has(adjacentNode)) {
+        continue
+      }
+
+      // check the adjacent node's value
+      if (adjacentNode === endNode) {
+        // we found it!
+        return currentDepth
+      }
+
+      queue.push([adjacentNode, currentDepth])
+      visited.add(adjacentNode)
     }
-
-    return []
   }
 
-  const edgeTargets = Object.values(from.nodeEdges)
-
-  const shortestPath: Node[] = edgeTargets
-    .map((edgeTarget) =>
-      edgeTarget ? findShortestPath(edgeTarget, to, [...localPath]) : []
-    )
-    .filter((edgeTarget) => !!edgeTarget)
-    .filter((path) => path && path.length > 0)
-    .sort((nodeA, nodeB) => nodeA.length - nodeB.length)[0]
-
-  return shortestPath
+  return -1
 }
