@@ -4,6 +4,7 @@ export async function partOne(inputFile: string) {
   const input = await readFile(`${__dirname}/${inputFile}`, 'utf-8')
 
   const { nodeGrid, startNode, endNode } = parseInput(input)
+
   calculateEdges(nodeGrid)
   // printNodeGrid(nodeGrid)
 
@@ -12,7 +13,7 @@ export async function partOne(inputFile: string) {
   return shortestPath.length - 1
 }
 
-// ---------------- ----------------  ---------------- //
+// --------------------------------------------------- //
 
 type NodeEdges = { [key in 'north' | 'south' | 'east' | 'west']: Node | null }
 
@@ -34,13 +35,12 @@ function parseInput(input: string) {
   let endNode: Node
 
   for (let rowIdx = 0; rowIdx < inputRows.length; rowIdx++) {
-    const inputRow = inputRows[rowIdx]
-
     const nodeRow = new Array<Node>()
+
     nodeGrid.push(nodeRow)
 
-    for (let colInx = 0; colInx < inputRow.length; colInx++) {
-      const squareValue = inputRow[colInx]
+    for (let colInx = 0; colInx < inputRows[0].length; colInx++) {
+      const squareValue = inputRows[rowIdx][colInx]
 
       const newNode: Node = {
         position: {
@@ -49,12 +49,7 @@ function parseInput(input: string) {
         },
         elevation: squareValue.charCodeAt(0),
         value: squareValue,
-        nodeEdges: {
-          north: null,
-          south: null,
-          west: null,
-          east: null,
-        },
+        nodeEdges: { north: null, south: null, west: null, east: null },
       }
 
       if (squareValue === 'S') {
@@ -79,11 +74,12 @@ function parseInput(input: string) {
 function printNodeGrid(nodeGrid: Array<Array<Node>>) {
   for (const row of nodeGrid) {
     const lineToPrint = []
+
     for (const node of row) {
       lineToPrint.push(node.elevation)
-      console.log(node.nodeEdges)
     }
-    // console.log(lineToPrint.join(''))
+
+    console.log(lineToPrint.join(''))
   }
 }
 
@@ -131,15 +127,13 @@ function calculateEdges(nodeGrid: Node[][]) {
 
 let minPathLength = Number.MAX_SAFE_INTEGER
 
-function findShortestPath(from: Node, to: Node, path = new Array<Node>()) {
-  const localPath = [...path]
-
+function findShortestPath(from: Node, to: Node, path = new Array<Node>()): Node[] {
   if (path.includes(from) || path.includes(to)) {
     // already visited this node in the current path -> cycle -> no bueno 🚫
     return []
   }
 
-  localPath.push(from)
+  const localPath = [from, ...path]
 
   if (localPath.length >= minPathLength) {
     return []
@@ -155,18 +149,15 @@ function findShortestPath(from: Node, to: Node, path = new Array<Node>()) {
     return []
   }
 
-  const paths = new Array<Array<Node>>()
+  const edgeTargets = Object.values(from.nodeEdges)
 
-  for (let edgeTarget of Object.values(from.nodeEdges)) {
-    if (edgeTarget) {
-      paths.push(findShortestPath(edgeTarget, to, [...localPath]))
-    }
-  }
-
-  // return shortest path
-  const shortest = paths
+  const shortestPath: Node[] = edgeTargets
+    .map((edgeTarget) =>
+      edgeTarget ? findShortestPath(edgeTarget, to, [...localPath]) : []
+    )
+    .filter((edgeTarget) => !!edgeTarget)
     .filter((path) => path && path.length > 0)
     .sort((nodeA, nodeB) => nodeA.length - nodeB.length)[0]
 
-  return shortest
+  return shortestPath
 }
