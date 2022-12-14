@@ -1,0 +1,5527 @@
+{
+  "document": {
+    "id": "doc",
+    "name": "New Document",
+    "version": 15.5,
+    "pages": {
+      "page": {
+        "id": "page",
+        "name": "Page 1",
+        "childIndex": 1,
+        "shapes": {
+          "ec0040dc-c3a1-4aa9-12a5-9191223cddfe": {
+            "id": "ec0040dc-c3a1-4aa9-12a5-9191223cddfe",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 1,
+            "point": [
+              -107.08,
+              53.92
+            ],
+            "rotation": 0,
+            "text": "[ ,       ]",
+            "style": {
+              "color": "indigo",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 0.6130181167418469,
+              "font": "mono",
+              "textAlign": "middle"
+            }
+          },
+          "f41c2b3b-aea1-486b-31a0-56887b8ff9b0": {
+            "id": "f41c2b3b-aea1-486b-31a0-56887b8ff9b0",
+            "type": "image",
+            "name": "Image",
+            "parentId": "page",
+            "childIndex": 2,
+            "point": [
+              -140.58,
+              157.92
+            ],
+            "size": [
+              448,
+              216
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "indigo",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "middle",
+              "font": "mono"
+            },
+            "assetId": "f41c2b3b-aea1-486b-31a0-56887b8ff9b0"
+          },
+          "1130fcef-cb7e-4edb-17ec-b1e60c50cb05": {
+            "id": "1130fcef-cb7e-4edb-17ec-b1e60c50cb05",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 3,
+            "point": [
+              -159.99,
+              -465.15
+            ],
+            "rotation": 0,
+            "text": "Packet Data",
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 3.345354464857334,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "3de5ca4b-256c-44f5-3ccd-313f46c2c4b5": {
+            "id": "3de5ca4b-256c-44f5-3ccd-313f46c2c4b5",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 4,
+            "point": [
+              142.42,
+              -121.88
+            ],
+            "rotation": 0,
+            "bend": -0.19275234280946268,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  173.99,
+                  0
+                ],
+                "canBind": true,
+                "bindingId": "472fc37a-7cc3-48fb-37ef-f7ed3e1f0b1c"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  0,
+                  154.11
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  72.14,
+                  60.29
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "c13249b9-ead3-4e2e-18a3-fba507563274": {
+            "id": "c13249b9-ead3-4e2e-18a3-fba507563274",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 1,
+            "point": [
+              -6.4,
+              53.62
+            ],
+            "rotation": 0,
+            "text": "[2,3,4]",
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 2.0158710960826793,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "baa5904f-1ccc-4126-38b2-8f943462aaf9": {
+            "id": "baa5904f-1ccc-4126-38b2-8f943462aaf9",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 1,
+            "point": [
+              316.41,
+              -152.86
+            ],
+            "rotation": 0,
+            "text": "- lists",
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1.1747680155993674,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "4b93d99f-f75c-4f28-105a-e887add7ad56": {
+            "id": "4b93d99f-f75c-4f28-105a-e887add7ad56",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 5,
+            "point": [
+              314.93,
+              -211.32
+            ],
+            "rotation": 0,
+            "text": "- integers",
+            "style": {
+              "color": "orange",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1.1828781321605617,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "8928d9f0-3bbc-4293-01d1-7d52c31fa624": {
+            "id": "8928d9f0-3bbc-4293-01d1-7d52c31fa624",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 1,
+            "point": [
+              -70.73,
+              49.52
+            ],
+            "rotation": 0,
+            "text": "1",
+            "style": {
+              "color": "orange",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 2.3745852984649463,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "ec8390f6-7a24-4cec-19a5-81268eac6aea": {
+            "id": "ec8390f6-7a24-4cec-19a5-81268eac6aea",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 6,
+            "point": [
+              -37.91,
+              -182.33
+            ],
+            "rotation": 0,
+            "bend": -0.27119393013971577,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  352.84,
+                  0
+                ],
+                "canBind": true,
+                "bindingId": "72fa22c5-690e-442b-0289-1704aea90a1a"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  0,
+                  223.85
+                ],
+                "canBind": true,
+                "bindingId": "6c627394-05a3-4a36-0288-d849449ea4e9"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  146.07,
+                  64.08
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "orange",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "da905bb0-cfee-41ce-2d59-15cffcee56d6": {
+            "id": "da905bb0-cfee-41ce-2d59-15cffcee56d6",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 7,
+            "point": [
+              893.66,
+              -465.15
+            ],
+            "rotation": 0,
+            "text": "Lists",
+            "style": {
+              "color": "white",
+              "size": "medium",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1.8675026686143128,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "03a93a99-ee4e-46f6-19f8-7045f4ef8765": {
+            "id": "03a93a99-ee4e-46f6-19f8-7045f4ef8765",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              1139.33,
+              -49.89
+            ],
+            "size": [
+              200,
+              296
+            ],
+            "text": "zero or more comma-separated values.\n \nCan be an integer or a list. \n \n \n ",
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "9a681a41-f928-405c-329e-51d5044726da": {
+            "id": "9a681a41-f928-405c-329e-51d5044726da",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              893.66,
+              -54.78
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "start with '[' and end with ']'",
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "5ac17fb0-2b01-415b-0caa-4dd95cb24b9c": {
+            "id": "5ac17fb0-2b01-415b-0caa-4dd95cb24b9c",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              1382.82,
+              -51.02
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": " Comparing two values:\n \n - left\n - right",
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "4be68685-d2a3-4004-24bb-7f9375dc236e": {
+            "id": "4be68685-d2a3-4004-24bb-7f9375dc236e",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              2055.58,
+              -168.6
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "if left && right are integers",
+            "rotation": 0,
+            "style": {
+              "color": "lightGray",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "9eb83ed6-1c22-4b3c-253e-9594a5805374": {
+            "id": "9eb83ed6-1c22-4b3c-253e-9594a5805374",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              2100.87,
+              -58.8
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "if \nleft < right",
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "4c75636f-c935-4077-336b-acf221eb6ca5": {
+            "id": "4c75636f-c935-4077-336b-acf221eb6ca5",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              2102.4,
+              205.74
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": " \n \nif\nleft > right",
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "454e538f-e78a-4c87-2265-58f70eb67f65": {
+            "id": "454e538f-e78a-4c87-2265-58f70eb67f65",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              2153.18,
+              33.09
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": " \n \n => Inputs are in the right order",
+            "rotation": 0,
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "b6231956-b72c-4e66-0b99-b2019648fc45": {
+            "id": "b6231956-b72c-4e66-0b99-b2019648fc45",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 56,
+            "point": [
+              2153.51,
+              344.44
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "=> Inputs are not in the right order",
+            "rotation": 0,
+            "style": {
+              "color": "red",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "e875cdd8-c98f-415f-0519-4d6bbbd95235": {
+            "id": "e875cdd8-c98f-415f-0519-4d6bbbd95235",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              2630.24,
+              -173.93
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "if left && right are lists",
+            "rotation": 0,
+            "style": {
+              "color": "lightGray",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "66122e92-e4ef-4fcf-2508-14f3235b5c4d": {
+            "id": "66122e92-e4ef-4fcf-2508-14f3235b5c4d",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              2631.82,
+              -22.94
+            ],
+            "size": [
+              200,
+              224
+            ],
+            "text": "compare left[i].value and right[i].value \n \n& make a decision",
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "6f9ac267-b7a6-4946-2341-a8cbe7343231": {
+            "id": "6f9ac267-b7a6-4946-2341-a8cbe7343231",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              2093.61,
+              505.04
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": " \n \n \n else",
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "47fe3a65-87fa-4490-3118-d4011d6b1cca": {
+            "id": "47fe3a65-87fa-4490-3118-d4011d6b1cca",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 11,
+            "point": [
+              2856.55,
+              262.02
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": " if left runs out of items first",
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "a5ddd49b-204f-428a-21f2-af5ba545c08c": {
+            "id": "a5ddd49b-204f-428a-21f2-af5ba545c08c",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 12,
+            "point": [
+              2949.73,
+              388.59
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": " \n \n => Inputs are in the right order",
+            "rotation": 0,
+            "style": {
+              "color": "green",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "d22e17c0-c43f-46ab-2f92-3bbd8ff038dd": {
+            "id": "d22e17c0-c43f-46ab-2f92-3bbd8ff038dd",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 11,
+            "point": [
+              2852.14,
+              578.36
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "if right runs out of items first",
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "f4cade7e-2810-486b-047a-427ddfdaf16d": {
+            "id": "f4cade7e-2810-486b-047a-427ddfdaf16d",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 11,
+            "point": [
+              2957.28,
+              693.55
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "=> Inputs are not in the right order",
+            "rotation": 0,
+            "style": {
+              "color": "red",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "4a28b6f0-c693-40f6-1974-c4a5e918bca9": {
+            "id": "4a28b6f0-c693-40f6-1974-c4a5e918bca9",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 9,
+            "point": [
+              2271.58,
+              -92.24
+            ],
+            "rotation": 0,
+            "bend": -0.3353463324357218,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  360.24,
+                  229.89
+                ],
+                "canBind": true,
+                "bindingId": "3068568c-4d26-42f6-3ca2-df11a088e44c"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  0,
+                  1.14
+                ],
+                "canBind": true,
+                "bindingId": "63428feb-b5c9-451a-1f55-e6816d3e9562"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  218.48,
+                  55.11
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "orange",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "ace94bcb-e767-4f3b-1bc9-45b617fa399a": {
+            "id": "ace94bcb-e767-4f3b-1bc9-45b617fa399a",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 10,
+            "point": [
+              2373.88,
+              -142.81
+            ],
+            "rotation": 0,
+            "text": "reuse \nthis algo",
+            "style": {
+              "color": "orange",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 0.8341691595953193,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "8c89c171-2e89-4766-223f-d5a0078adb41": {
+            "id": "8c89c171-2e89-4766-223f-d5a0078adb41",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              2783.79,
+              142.91
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "if \nNo decision made",
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "04b798f6-0839-430c-3b08-a870c492a8a3": {
+            "id": "04b798f6-0839-430c-3b08-a870c492a8a3",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 13,
+            "point": [
+              2053.91,
+              -659.15
+            ],
+            "rotation": 0,
+            "text": "3 \npair comparison \ncases",
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "9fa0ca1e-5973-4909-3844-350dee1cf5d1": {
+            "id": "9fa0ca1e-5973-4909-3844-350dee1cf5d1",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              3157.6,
+              -168.24
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "if left || right is an integer",
+            "rotation": 0,
+            "style": {
+              "color": "lightGray",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "19b70479-53f5-4421-3ce1-bfd81210dc39": {
+            "id": "19b70479-53f5-4421-3ce1-bfd81210dc39",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              3198.05,
+              -21
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "convert integer \nto\nlist\n \n AND compare",
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "7227ef0a-0802-4b85-0dd4-edd77a83dd00": {
+            "id": "7227ef0a-0802-4b85-0dd4-edd77a83dd00",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 14,
+            "point": [
+              2846.24,
+              -102.81
+            ],
+            "rotation": 0,
+            "bend": -0.18112406700763412,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  351.81,
+                  218.06
+                ],
+                "canBind": true,
+                "bindingId": "e590e249-cb1d-4e74-12d6-8641dca261ce"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true,
+                "bindingId": "dcf610dd-2976-43be-238c-cf5091d7bc04"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  195.65,
+                  77.17
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "orange",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "79fa9026-4a63-4b57-3353-cf9bdc7e66cd": {
+            "id": "79fa9026-4a63-4b57-3353-cf9bdc7e66cd",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 11,
+            "point": [
+              2950.9,
+              -145.64
+            ],
+            "rotation": 0,
+            "text": "compare the\ntwo lists",
+            "style": {
+              "color": "orange",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 0.8341691595953193,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "3c23d8a5-1ec6-425f-2657-6858e43cd52f": {
+            "id": "3c23d8a5-1ec6-425f-2657-6858e43cd52f",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 15,
+            "point": [
+              3168.96,
+              -223.33
+            ],
+            "rotation": 0,
+            "text": "Mixed types",
+            "style": {
+              "color": "orange",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "97b4fbe0-e333-44c9-3221-0500cd843240": {
+            "id": "97b4fbe0-e333-44c9-3221-0500cd843240",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 16,
+            "point": [
+              2640.01,
+              -228.19
+            ],
+            "rotation": 0,
+            "text": "Two lists",
+            "style": {
+              "color": "orange",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "e26d4c0c-7d6f-457f-180f-b47a3f73f711": {
+            "id": "e26d4c0c-7d6f-457f-180f-b47a3f73f711",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 17,
+            "point": [
+              2053.91,
+              -230.32
+            ],
+            "rotation": 0,
+            "text": "Two integers",
+            "style": {
+              "color": "orange",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "a22cf854-5e2d-476f-3e0c-2f231f3ecb49": {
+            "id": "a22cf854-5e2d-476f-3e0c-2f231f3ecb49",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 18,
+            "point": [
+              -160.51,
+              -1570.15
+            ],
+            "rotation": 0,
+            "text": "parsing the input is the hardest part...",
+            "style": {
+              "color": "red",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "668003f6-31a6-44f3-1527-3991c565f3a7": {
+            "id": "668003f6-31a6-44f3-1527-3991c565f3a7",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 19,
+            "point": [
+              3641.29,
+              -1804.53
+            ],
+            "rotation": 0,
+            "text": "Base case:\n \n- we have a complete list\n- we add the complete list to \n  the previous one\n- if there is no previous one\n  => we completed parsing the list",
+            "style": {
+              "color": "blue",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "c177e489-cbb7-4d97-0e2d-02bc122034c0": {
+            "id": "c177e489-cbb7-4d97-0e2d-02bc122034c0",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "541a3d8d-c5fb-4aa8-3ec2-43f90f2a1204",
+            "childIndex": 1,
+            "point": [
+              3861.26,
+              97.03
+            ],
+            "size": [
+              835.02,
+              298.58
+            ],
+            "rotation": 1.5707963267948966,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "93f23519-68fe-46ee-0a29-3bd8935d7ab2": {
+            "id": "93f23519-68fe-46ee-0a29-3bd8935d7ab2",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 21,
+            "point": [
+              4214.7,
+              466.08
+            ],
+            "rotation": 0,
+            "text": "[",
+            "style": {
+              "color": "blue",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1.5149532063857665,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "a09ae5a0-cfc6-4792-1c3a-2bbbb71b14f4": {
+            "id": "a09ae5a0-cfc6-4792-1c3a-2bbbb71b14f4",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "541a3d8d-c5fb-4aa8-3ec2-43f90f2a1204",
+            "childIndex": 2,
+            "point": [
+              4131.03,
+              459.67
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0.29,
+                0,
+                0.5
+              ],
+              [
+                2.7,
+                0,
+                0.5
+              ],
+              [
+                12.72,
+                0,
+                0.5
+              ],
+              [
+                34.83,
+                0,
+                0.5
+              ],
+              [
+                64.86,
+                0,
+                0.5
+              ],
+              [
+                96.86,
+                0,
+                0.5
+              ],
+              [
+                121.09,
+                0,
+                0.5
+              ],
+              [
+                138.08,
+                0,
+                0.5
+              ],
+              [
+                153.47,
+                0,
+                0.5
+              ],
+              [
+                164.85,
+                0,
+                0.5
+              ],
+              [
+                173.56,
+                0,
+                0.5
+              ],
+              [
+                181.79,
+                0,
+                0.5
+              ],
+              [
+                190.68,
+                0,
+                0.5
+              ],
+              [
+                200.06,
+                0,
+                0.5
+              ],
+              [
+                208.95,
+                0,
+                0.5
+              ],
+              [
+                216.7,
+                0,
+                0.5
+              ],
+              [
+                223.16,
+                0,
+                0.5
+              ],
+              [
+                227.49,
+                0,
+                0.5
+              ],
+              [
+                231.15,
+                0,
+                0.5
+              ],
+              [
+                234.78,
+                0,
+                0.5
+              ],
+              [
+                238.12,
+                0,
+                0.5
+              ],
+              [
+                241.38,
+                0,
+                0.5
+              ],
+              [
+                244.51,
+                0,
+                0.5
+              ],
+              [
+                247.69,
+                0,
+                0.5
+              ],
+              [
+                250.84,
+                0,
+                0.5
+              ],
+              [
+                254.02,
+                0,
+                0.5
+              ],
+              [
+                256.85,
+                0,
+                0.5
+              ],
+              [
+                259.23,
+                0,
+                0.5
+              ],
+              [
+                261.1,
+                0,
+                0.5
+              ],
+              [
+                262.49,
+                0,
+                0.5
+              ],
+              [
+                262.81,
+                0,
+                0.5
+              ],
+              [
+                263.42,
+                0,
+                0.5
+              ],
+              [
+                265.45,
+                0,
+                0.5
+              ],
+              [
+                269.75,
+                0,
+                0.5
+              ],
+              [
+                275.66,
+                0,
+                0.5
+              ],
+              [
+                281.11,
+                0,
+                0.5
+              ],
+              [
+                284.87,
+                0,
+                0.5
+              ],
+              [
+                287.22,
+                0,
+                0.5
+              ],
+              [
+                289.2,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "be45bdc8-2bf2-4860-07a8-57318e43fa48": {
+            "id": "be45bdc8-2bf2-4860-07a8-57318e43fa48",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "541a3d8d-c5fb-4aa8-3ec2-43f90f2a1204",
+            "childIndex": 3,
+            "point": [
+              4132.02,
+              246.39
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0.83,
+                0,
+                0.5
+              ],
+              [
+                3.95,
+                0,
+                0.5
+              ],
+              [
+                9.67,
+                0,
+                0.5
+              ],
+              [
+                17.95,
+                0,
+                0.5
+              ],
+              [
+                28.66,
+                0,
+                0.5
+              ],
+              [
+                40.39,
+                0,
+                0.5
+              ],
+              [
+                51.37,
+                0,
+                0.5
+              ],
+              [
+                62.38,
+                0,
+                0.5
+              ],
+              [
+                74.08,
+                0,
+                0.5
+              ],
+              [
+                85.08,
+                0,
+                0.5
+              ],
+              [
+                96.09,
+                0,
+                0.5
+              ],
+              [
+                106.4,
+                0,
+                0.5
+              ],
+              [
+                115.43,
+                0,
+                0.5
+              ],
+              [
+                124.14,
+                0,
+                0.5
+              ],
+              [
+                132.47,
+                0,
+                0.5
+              ],
+              [
+                141.13,
+                0,
+                0.5
+              ],
+              [
+                149.68,
+                0,
+                0.5
+              ],
+              [
+                156.94,
+                0,
+                0.5
+              ],
+              [
+                163.41,
+                0,
+                0.5
+              ],
+              [
+                169.34,
+                0,
+                0.5
+              ],
+              [
+                175.16,
+                0,
+                0.5
+              ],
+              [
+                181.52,
+                0,
+                0.5
+              ],
+              [
+                188.04,
+                0,
+                0.5
+              ],
+              [
+                195.14,
+                0,
+                0.5
+              ],
+              [
+                202.97,
+                0,
+                0.5
+              ],
+              [
+                211.84,
+                0,
+                0.5
+              ],
+              [
+                221.11,
+                0,
+                0.5
+              ],
+              [
+                229.36,
+                0,
+                0.5
+              ],
+              [
+                236.6,
+                0,
+                0.5
+              ],
+              [
+                242.21,
+                0,
+                0.5
+              ],
+              [
+                246.06,
+                0,
+                0.5
+              ],
+              [
+                248.86,
+                0,
+                0.5
+              ],
+              [
+                251.19,
+                0,
+                0.5
+              ],
+              [
+                253.03,
+                0,
+                0.5
+              ],
+              [
+                254.45,
+                0,
+                0.5
+              ],
+              [
+                255.89,
+                0,
+                0.5
+              ],
+              [
+                257.25,
+                0,
+                0.5
+              ],
+              [
+                258.19,
+                0,
+                0.5
+              ],
+              [
+                258.72,
+                0,
+                0.5
+              ],
+              [
+                259.23,
+                0,
+                0.5
+              ],
+              [
+                260.16,
+                0,
+                0.5
+              ],
+              [
+                262.89,
+                0,
+                0.5
+              ],
+              [
+                266.55,
+                0,
+                0.5
+              ],
+              [
+                269.38,
+                0,
+                0.5
+              ],
+              [
+                271.25,
+                0,
+                0.5
+              ],
+              [
+                272.66,
+                0,
+                0.5
+              ],
+              [
+                273.68,
+                0,
+                0.5
+              ],
+              [
+                274.43,
+                0,
+                0.5
+              ],
+              [
+                275.58,
+                0,
+                0.5
+              ],
+              [
+                277.45,
+                0,
+                0.5
+              ],
+              [
+                280.33,
+                0,
+                0.5
+              ],
+              [
+                284.2,
+                0,
+                0.5
+              ],
+              [
+                288.93,
+                0,
+                0.5
+              ],
+              [
+                293.21,
+                0,
+                0.5
+              ],
+              [
+                296.04,
+                0,
+                0.5
+              ],
+              [
+                297.94,
+                0,
+                0.5
+              ],
+              [
+                298.95,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "b61510a2-7bcd-4f30-3ccf-20b818ad0dff": {
+            "id": "b61510a2-7bcd-4f30-3ccf-20b818ad0dff",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "541a3d8d-c5fb-4aa8-3ec2-43f90f2a1204",
+            "childIndex": 4,
+            "point": [
+              4131.25,
+              29.88
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0.29,
+                0.03,
+                0.5
+              ],
+              [
+                0.91,
+                0,
+                0.5
+              ],
+              [
+                5,
+                0,
+                0.5
+              ],
+              [
+                15.57,
+                0,
+                0.5
+              ],
+              [
+                31.71,
+                0,
+                0.5
+              ],
+              [
+                48.7,
+                0,
+                0.5
+              ],
+              [
+                65.31,
+                0,
+                0.5
+              ],
+              [
+                81.77,
+                0,
+                0.5
+              ],
+              [
+                97.16,
+                0,
+                0.5
+              ],
+              [
+                113.8,
+                0,
+                0.5
+              ],
+              [
+                129.69,
+                0,
+                0.5
+              ],
+              [
+                144.15,
+                0,
+                0.5
+              ],
+              [
+                158.04,
+                0,
+                0.5
+              ],
+              [
+                171.21,
+                0,
+                0.5
+              ],
+              [
+                183.65,
+                0,
+                0.5
+              ],
+              [
+                194.77,
+                0,
+                0.5
+              ],
+              [
+                205.03,
+                0,
+                0.5
+              ],
+              [
+                214.67,
+                0,
+                0.5
+              ],
+              [
+                223.81,
+                0,
+                0.5
+              ],
+              [
+                232.51,
+                0,
+                0.5
+              ],
+              [
+                240.53,
+                0,
+                0.5
+              ],
+              [
+                247.77,
+                0,
+                0.5
+              ],
+              [
+                254.34,
+                0,
+                0.5
+              ],
+              [
+                261.6,
+                0,
+                0.5
+              ],
+              [
+                268.9,
+                0,
+                0.5
+              ],
+              [
+                275.26,
+                0,
+                0.5
+              ],
+              [
+                281.03,
+                0,
+                0.5
+              ],
+              [
+                285.57,
+                0,
+                0.5
+              ],
+              [
+                288.85,
+                0,
+                0.5
+              ],
+              [
+                290.94,
+                0,
+                0.5
+              ],
+              [
+                292.38,
+                0,
+                0.5
+              ],
+              [
+                293.21,
+                0,
+                0.5
+              ],
+              [
+                293.58,
+                0,
+                0.5
+              ],
+              [
+                293.9,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "0bd2e9e6-fa1f-4389-370b-408701343954": {
+            "id": "0bd2e9e6-fa1f-4389-370b-408701343954",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 22,
+            "point": [
+              4244.34,
+              -961.15
+            ],
+            "rotation": 3.141592653589793,
+            "text": "[",
+            "style": {
+              "color": "blue",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1.5149532063857665,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "d2fb15cf-c7f4-4e9c-0bda-490556d50cb6": {
+            "id": "d2fb15cf-c7f4-4e9c-0bda-490556d50cb6",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 23,
+            "point": [
+              4240.04,
+              287.21
+            ],
+            "rotation": 0,
+            "text": "4",
+            "style": {
+              "color": "orange",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "37f0692c-0af1-4d41-02ee-55f25160e650": {
+            "id": "37f0692c-0af1-4d41-02ee-55f25160e650",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 24,
+            "point": [
+              4245.29,
+              -123.58
+            ],
+            "rotation": 0,
+            "text": "7",
+            "style": {
+              "color": "orange",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "a63c024d-5b0a-402d-01d0-92f97b6eaeed": {
+            "id": "a63c024d-5b0a-402d-01d0-92f97b6eaeed",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "541a3d8d-c5fb-4aa8-3ec2-43f90f2a1204",
+            "childIndex": 5,
+            "point": [
+              3861.26,
+              -728.84
+            ],
+            "size": [
+              835.02,
+              298.58
+            ],
+            "rotation": 1.5707963267948966,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "e210875f-9541-4bcb-00d8-2d4941c4faf4": {
+            "id": "e210875f-9541-4bcb-00d8-2d4941c4faf4",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "541a3d8d-c5fb-4aa8-3ec2-43f90f2a1204",
+            "childIndex": 6,
+            "point": [
+              4131.03,
+              -366.2
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0.29,
+                0,
+                0.5
+              ],
+              [
+                2.7,
+                0,
+                0.5
+              ],
+              [
+                12.72,
+                0,
+                0.5
+              ],
+              [
+                34.83,
+                0,
+                0.5
+              ],
+              [
+                64.86,
+                0,
+                0.5
+              ],
+              [
+                96.86,
+                0,
+                0.5
+              ],
+              [
+                121.09,
+                0,
+                0.5
+              ],
+              [
+                138.08,
+                0,
+                0.5
+              ],
+              [
+                153.47,
+                0,
+                0.5
+              ],
+              [
+                164.85,
+                0,
+                0.5
+              ],
+              [
+                173.56,
+                0,
+                0.5
+              ],
+              [
+                181.79,
+                0,
+                0.5
+              ],
+              [
+                190.68,
+                0,
+                0.5
+              ],
+              [
+                200.06,
+                0,
+                0.5
+              ],
+              [
+                208.95,
+                0,
+                0.5
+              ],
+              [
+                216.7,
+                0,
+                0.5
+              ],
+              [
+                223.16,
+                0,
+                0.5
+              ],
+              [
+                227.49,
+                0,
+                0.5
+              ],
+              [
+                231.15,
+                0,
+                0.5
+              ],
+              [
+                234.78,
+                0,
+                0.5
+              ],
+              [
+                238.12,
+                0,
+                0.5
+              ],
+              [
+                241.38,
+                0,
+                0.5
+              ],
+              [
+                244.51,
+                0,
+                0.5
+              ],
+              [
+                247.69,
+                0,
+                0.5
+              ],
+              [
+                250.84,
+                0,
+                0.5
+              ],
+              [
+                254.02,
+                0,
+                0.5
+              ],
+              [
+                256.85,
+                0,
+                0.5
+              ],
+              [
+                259.23,
+                0,
+                0.5
+              ],
+              [
+                261.1,
+                0,
+                0.5
+              ],
+              [
+                262.49,
+                0,
+                0.5
+              ],
+              [
+                262.81,
+                0,
+                0.5
+              ],
+              [
+                263.42,
+                0,
+                0.5
+              ],
+              [
+                265.45,
+                0,
+                0.5
+              ],
+              [
+                269.75,
+                0,
+                0.5
+              ],
+              [
+                275.66,
+                0,
+                0.5
+              ],
+              [
+                281.11,
+                0,
+                0.5
+              ],
+              [
+                284.87,
+                0,
+                0.5
+              ],
+              [
+                287.22,
+                0,
+                0.5
+              ],
+              [
+                289.2,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "f7a04241-53ef-41ae-05fb-73441951b040": {
+            "id": "f7a04241-53ef-41ae-05fb-73441951b040",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "541a3d8d-c5fb-4aa8-3ec2-43f90f2a1204",
+            "childIndex": 7,
+            "point": [
+              4132.02,
+              -579.48
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0.83,
+                0,
+                0.5
+              ],
+              [
+                3.95,
+                0,
+                0.5
+              ],
+              [
+                9.67,
+                0,
+                0.5
+              ],
+              [
+                17.95,
+                0,
+                0.5
+              ],
+              [
+                28.66,
+                0,
+                0.5
+              ],
+              [
+                40.39,
+                0,
+                0.5
+              ],
+              [
+                51.37,
+                0,
+                0.5
+              ],
+              [
+                62.38,
+                0,
+                0.5
+              ],
+              [
+                74.08,
+                0,
+                0.5
+              ],
+              [
+                85.08,
+                0,
+                0.5
+              ],
+              [
+                96.09,
+                0,
+                0.5
+              ],
+              [
+                106.4,
+                0,
+                0.5
+              ],
+              [
+                115.43,
+                0,
+                0.5
+              ],
+              [
+                124.14,
+                0,
+                0.5
+              ],
+              [
+                132.47,
+                0,
+                0.5
+              ],
+              [
+                141.13,
+                0,
+                0.5
+              ],
+              [
+                149.68,
+                0,
+                0.5
+              ],
+              [
+                156.94,
+                0,
+                0.5
+              ],
+              [
+                163.41,
+                0,
+                0.5
+              ],
+              [
+                169.34,
+                0,
+                0.5
+              ],
+              [
+                175.16,
+                0,
+                0.5
+              ],
+              [
+                181.52,
+                0,
+                0.5
+              ],
+              [
+                188.04,
+                0,
+                0.5
+              ],
+              [
+                195.14,
+                0,
+                0.5
+              ],
+              [
+                202.97,
+                0,
+                0.5
+              ],
+              [
+                211.84,
+                0,
+                0.5
+              ],
+              [
+                221.11,
+                0,
+                0.5
+              ],
+              [
+                229.36,
+                0,
+                0.5
+              ],
+              [
+                236.6,
+                0,
+                0.5
+              ],
+              [
+                242.21,
+                0,
+                0.5
+              ],
+              [
+                246.06,
+                0,
+                0.5
+              ],
+              [
+                248.86,
+                0,
+                0.5
+              ],
+              [
+                251.19,
+                0,
+                0.5
+              ],
+              [
+                253.03,
+                0,
+                0.5
+              ],
+              [
+                254.45,
+                0,
+                0.5
+              ],
+              [
+                255.89,
+                0,
+                0.5
+              ],
+              [
+                257.25,
+                0,
+                0.5
+              ],
+              [
+                258.19,
+                0,
+                0.5
+              ],
+              [
+                258.72,
+                0,
+                0.5
+              ],
+              [
+                259.23,
+                0,
+                0.5
+              ],
+              [
+                260.16,
+                0,
+                0.5
+              ],
+              [
+                262.89,
+                0,
+                0.5
+              ],
+              [
+                266.55,
+                0,
+                0.5
+              ],
+              [
+                269.38,
+                0,
+                0.5
+              ],
+              [
+                271.25,
+                0,
+                0.5
+              ],
+              [
+                272.66,
+                0,
+                0.5
+              ],
+              [
+                273.68,
+                0,
+                0.5
+              ],
+              [
+                274.43,
+                0,
+                0.5
+              ],
+              [
+                275.58,
+                0,
+                0.5
+              ],
+              [
+                277.45,
+                0,
+                0.5
+              ],
+              [
+                280.33,
+                0,
+                0.5
+              ],
+              [
+                284.2,
+                0,
+                0.5
+              ],
+              [
+                288.93,
+                0,
+                0.5
+              ],
+              [
+                293.21,
+                0,
+                0.5
+              ],
+              [
+                296.04,
+                0,
+                0.5
+              ],
+              [
+                297.94,
+                0,
+                0.5
+              ],
+              [
+                298.95,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "48d99880-d27d-4e66-385b-36f941d2d005": {
+            "id": "48d99880-d27d-4e66-385b-36f941d2d005",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "541a3d8d-c5fb-4aa8-3ec2-43f90f2a1204",
+            "childIndex": 8,
+            "point": [
+              4131.25,
+              -795.99
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0.29,
+                0.03,
+                0.5
+              ],
+              [
+                0.91,
+                0,
+                0.5
+              ],
+              [
+                5,
+                0,
+                0.5
+              ],
+              [
+                15.57,
+                0,
+                0.5
+              ],
+              [
+                31.71,
+                0,
+                0.5
+              ],
+              [
+                48.7,
+                0,
+                0.5
+              ],
+              [
+                65.31,
+                0,
+                0.5
+              ],
+              [
+                81.77,
+                0,
+                0.5
+              ],
+              [
+                97.16,
+                0,
+                0.5
+              ],
+              [
+                113.8,
+                0,
+                0.5
+              ],
+              [
+                129.69,
+                0,
+                0.5
+              ],
+              [
+                144.15,
+                0,
+                0.5
+              ],
+              [
+                158.04,
+                0,
+                0.5
+              ],
+              [
+                171.21,
+                0,
+                0.5
+              ],
+              [
+                183.65,
+                0,
+                0.5
+              ],
+              [
+                194.77,
+                0,
+                0.5
+              ],
+              [
+                205.03,
+                0,
+                0.5
+              ],
+              [
+                214.67,
+                0,
+                0.5
+              ],
+              [
+                223.81,
+                0,
+                0.5
+              ],
+              [
+                232.51,
+                0,
+                0.5
+              ],
+              [
+                240.53,
+                0,
+                0.5
+              ],
+              [
+                247.77,
+                0,
+                0.5
+              ],
+              [
+                254.34,
+                0,
+                0.5
+              ],
+              [
+                261.6,
+                0,
+                0.5
+              ],
+              [
+                268.9,
+                0,
+                0.5
+              ],
+              [
+                275.26,
+                0,
+                0.5
+              ],
+              [
+                281.03,
+                0,
+                0.5
+              ],
+              [
+                285.57,
+                0,
+                0.5
+              ],
+              [
+                288.85,
+                0,
+                0.5
+              ],
+              [
+                290.94,
+                0,
+                0.5
+              ],
+              [
+                292.38,
+                0,
+                0.5
+              ],
+              [
+                293.21,
+                0,
+                0.5
+              ],
+              [
+                293.58,
+                0,
+                0.5
+              ],
+              [
+                293.9,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "541a3d8d-c5fb-4aa8-3ec2-43f90f2a1204": {
+            "id": "541a3d8d-c5fb-4aa8-3ec2-43f90f2a1204",
+            "type": "group",
+            "name": "Group",
+            "parentId": "page",
+            "childIndex": 21,
+            "point": [
+              4129.4800000000005,
+              -997.0600000000003
+            ],
+            "size": [
+              301.4899999999998,
+              1660.8900000000003
+            ],
+            "rotation": 0,
+            "children": [
+              "c177e489-cbb7-4d97-0e2d-02bc122034c0",
+              "a09ae5a0-cfc6-4792-1c3a-2bbbb71b14f4",
+              "be45bdc8-2bf2-4860-07a8-57318e43fa48",
+              "b61510a2-7bcd-4f30-3ccf-20b818ad0dff",
+              "a63c024d-5b0a-402d-01d0-92f97b6eaeed",
+              "e210875f-9541-4bcb-00d8-2d4941c4faf4",
+              "f7a04241-53ef-41ae-05fb-73441951b040",
+              "48d99880-d27d-4e66-385b-36f941d2d005"
+            ],
+            "style": {
+              "color": "black",
+              "size": "small",
+              "isFilled": false,
+              "dash": "draw",
+              "scale": 1
+            }
+          },
+          "00abc8d5-b48e-4fe7-2c6a-c438de4f5409": {
+            "id": "00abc8d5-b48e-4fe7-2c6a-c438de4f5409",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 23,
+            "point": [
+              4245.35,
+              -758.02
+            ],
+            "rotation": 3.141592653589793,
+            "text": "[",
+            "style": {
+              "color": "blue",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1.5149532063857665,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "e70504e2-bcd8-4bbe-1d4d-566f2e1e4c24": {
+            "id": "e70504e2-bcd8-4bbe-1d4d-566f2e1e4c24",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 25,
+            "point": [
+              4247.56,
+              -529.25
+            ],
+            "rotation": 0,
+            "text": "3",
+            "style": {
+              "color": "orange",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "82ac6405-803d-44fc-23f9-efbcf00964ba": {
+            "id": "82ac6405-803d-44fc-23f9-efbcf00964ba",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 26,
+            "point": [
+              4662.33,
+              -958.35
+            ],
+            "rotation": 0,
+            "text": "= [4,7,[3]]",
+            "style": {
+              "color": "orange",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "03bb92e8-d192-4037-27b7-7138ec468147": {
+            "id": "03bb92e8-d192-4037-27b7-7138ec468147",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 27,
+            "point": [
+              4307.7,
+              592.11
+            ],
+            "rotation": 0,
+            "bend": 7.323762961100215e-8,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true,
+                "bindingId": "9e32585a-9668-417a-37a9-49b317091c66"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  488.2,
+                  135.54
+                ],
+                "canBind": true,
+                "bindingId": "35483a2c-43e8-4df7-3753-6b5e03237279"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  244.1,
+                  67.77
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "orange",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "d1911ecd-2a8e-4379-2bc6-8b91fb7282b5": {
+            "id": "d1911ecd-2a8e-4379-2bc6-8b91fb7282b5",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 29,
+            "point": [
+              4803.9,
+              725.03
+            ],
+            "rotation": 0,
+            "text": "new array",
+            "style": {
+              "color": "orange",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "51c38f55-7ab6-4567-2951-e60d8c6fc40d": {
+            "id": "51c38f55-7ab6-4567-2951-e60d8c6fc40d",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 30,
+            "point": [
+              4305.04,
+              253.7
+            ],
+            "rotation": 0,
+            "bend": 0.6343460535693247,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  102.19
+                ],
+                "canBind": true,
+                "bindingId": "bbe06dae-5225-45d2-0aab-43e1a882d515"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  748.39,
+                  463.33
+                ],
+                "canBind": true,
+                "bindingId": "80a0a3ea-c8c7-42d4-2d44-a50c8f3d2a17"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  488.74,
+                  45.39
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "blue",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "141455a9-f720-40cf-30fa-6a23dfdeaa95": {
+            "id": "141455a9-f720-40cf-30fa-6a23dfdeaa95",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 31,
+            "point": [
+              4310.29,
+              -86.23
+            ],
+            "rotation": 0,
+            "bend": 0.6290646327513058,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  45.25
+                ],
+                "canBind": true,
+                "bindingId": "c422c43e-761b-41f5-38bf-3502718a39fc"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  832.16,
+                  803.26
+                ],
+                "canBind": true,
+                "bindingId": "5c076d70-14c9-451c-0587-20bf9701c95d"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  654.5,
+                  162.51
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "blue",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "88feb563-602c-4e7a-3d8c-9380f2c07bd6": {
+            "id": "88feb563-602c-4e7a-3d8c-9380f2c07bd6",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 32,
+            "point": [
+              4313.27,
+              -246.73
+            ],
+            "rotation": 0,
+            "bend": 0,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true,
+                "bindingId": "6b311163-9a61-44b6-36c1-2e0d52ff4107"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  475.58,
+                  108.81
+                ],
+                "canBind": true,
+                "bindingId": "ecc5c2e2-30a4-465e-2de8-fd2d90df7a7b"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  237.79,
+                  54.41
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "orange",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "41479dc8-b355-4156-3afc-bb3a6eb57be9": {
+            "id": "41479dc8-b355-4156-3afc-bb3a6eb57be9",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 33,
+            "point": [
+              4796.85,
+              -153.7
+            ],
+            "rotation": 0,
+            "text": "new array",
+            "style": {
+              "color": "orange",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "2ce9b62d-f3fb-4947-2c9f-7408261decf2": {
+            "id": "2ce9b62d-f3fb-4947-2c9f-7408261decf2",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 34,
+            "point": [
+              4220.27,
+              -359.52
+            ],
+            "rotation": 0,
+            "text": "[",
+            "style": {
+              "color": "blue",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1.5149532063857665,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "14d7f125-b024-416e-0004-1505704ed635": {
+            "id": "14d7f125-b024-416e-0004-1505704ed635",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 35,
+            "point": [
+              4312.56,
+              -510.03
+            ],
+            "rotation": 0,
+            "bend": 0.4459659740731847,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  47.82
+                ],
+                "canBind": true,
+                "bindingId": "8c8f285a-9648-4e5b-2bf4-6162bc3db1d3"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  714.06,
+                  356.3
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  425.82,
+                  42.84
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "blue",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "e3fec97a-860f-49eb-17e2-985bf88612a5": {
+            "id": "e3fec97a-860f-49eb-17e2-985bf88612a5",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 37,
+            "point": [
+              5535.05,
+              92.45
+            ],
+            "size": [
+              835.02,
+              298.58
+            ],
+            "rotation": 1.5707963267948966,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "c9daf482-cfca-4e06-1257-5292e280146c": {
+            "id": "c9daf482-cfca-4e06-1257-5292e280146c",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "page",
+            "childIndex": 38,
+            "point": [
+              5804.82,
+              455.09
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0.29,
+                0,
+                0.5
+              ],
+              [
+                2.7,
+                0,
+                0.5
+              ],
+              [
+                12.72,
+                0,
+                0.5
+              ],
+              [
+                34.83,
+                0,
+                0.5
+              ],
+              [
+                64.86,
+                0,
+                0.5
+              ],
+              [
+                96.86,
+                0,
+                0.5
+              ],
+              [
+                121.09,
+                0,
+                0.5
+              ],
+              [
+                138.08,
+                0,
+                0.5
+              ],
+              [
+                153.47,
+                0,
+                0.5
+              ],
+              [
+                164.85,
+                0,
+                0.5
+              ],
+              [
+                173.56,
+                0,
+                0.5
+              ],
+              [
+                181.79,
+                0,
+                0.5
+              ],
+              [
+                190.68,
+                0,
+                0.5
+              ],
+              [
+                200.06,
+                0,
+                0.5
+              ],
+              [
+                208.95,
+                0,
+                0.5
+              ],
+              [
+                216.7,
+                0,
+                0.5
+              ],
+              [
+                223.16,
+                0,
+                0.5
+              ],
+              [
+                227.49,
+                0,
+                0.5
+              ],
+              [
+                231.15,
+                0,
+                0.5
+              ],
+              [
+                234.78,
+                0,
+                0.5
+              ],
+              [
+                238.12,
+                0,
+                0.5
+              ],
+              [
+                241.38,
+                0,
+                0.5
+              ],
+              [
+                244.51,
+                0,
+                0.5
+              ],
+              [
+                247.69,
+                0,
+                0.5
+              ],
+              [
+                250.84,
+                0,
+                0.5
+              ],
+              [
+                254.02,
+                0,
+                0.5
+              ],
+              [
+                256.85,
+                0,
+                0.5
+              ],
+              [
+                259.23,
+                0,
+                0.5
+              ],
+              [
+                261.1,
+                0,
+                0.5
+              ],
+              [
+                262.49,
+                0,
+                0.5
+              ],
+              [
+                262.81,
+                0,
+                0.5
+              ],
+              [
+                263.42,
+                0,
+                0.5
+              ],
+              [
+                265.45,
+                0,
+                0.5
+              ],
+              [
+                269.75,
+                0,
+                0.5
+              ],
+              [
+                275.66,
+                0,
+                0.5
+              ],
+              [
+                281.11,
+                0,
+                0.5
+              ],
+              [
+                284.87,
+                0,
+                0.5
+              ],
+              [
+                287.22,
+                0,
+                0.5
+              ],
+              [
+                289.2,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "ca555413-fdd9-41ea-119c-c7d4c2b1e150": {
+            "id": "ca555413-fdd9-41ea-119c-c7d4c2b1e150",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "page",
+            "childIndex": 39,
+            "point": [
+              5805.81,
+              241.81
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0.83,
+                0,
+                0.5
+              ],
+              [
+                3.95,
+                0,
+                0.5
+              ],
+              [
+                9.67,
+                0,
+                0.5
+              ],
+              [
+                17.95,
+                0,
+                0.5
+              ],
+              [
+                28.66,
+                0,
+                0.5
+              ],
+              [
+                40.39,
+                0,
+                0.5
+              ],
+              [
+                51.37,
+                0,
+                0.5
+              ],
+              [
+                62.38,
+                0,
+                0.5
+              ],
+              [
+                74.08,
+                0,
+                0.5
+              ],
+              [
+                85.08,
+                0,
+                0.5
+              ],
+              [
+                96.09,
+                0,
+                0.5
+              ],
+              [
+                106.4,
+                0,
+                0.5
+              ],
+              [
+                115.43,
+                0,
+                0.5
+              ],
+              [
+                124.14,
+                0,
+                0.5
+              ],
+              [
+                132.47,
+                0,
+                0.5
+              ],
+              [
+                141.13,
+                0,
+                0.5
+              ],
+              [
+                149.68,
+                0,
+                0.5
+              ],
+              [
+                156.94,
+                0,
+                0.5
+              ],
+              [
+                163.41,
+                0,
+                0.5
+              ],
+              [
+                169.34,
+                0,
+                0.5
+              ],
+              [
+                175.16,
+                0,
+                0.5
+              ],
+              [
+                181.52,
+                0,
+                0.5
+              ],
+              [
+                188.04,
+                0,
+                0.5
+              ],
+              [
+                195.14,
+                0,
+                0.5
+              ],
+              [
+                202.97,
+                0,
+                0.5
+              ],
+              [
+                211.84,
+                0,
+                0.5
+              ],
+              [
+                221.11,
+                0,
+                0.5
+              ],
+              [
+                229.36,
+                0,
+                0.5
+              ],
+              [
+                236.6,
+                0,
+                0.5
+              ],
+              [
+                242.21,
+                0,
+                0.5
+              ],
+              [
+                246.06,
+                0,
+                0.5
+              ],
+              [
+                248.86,
+                0,
+                0.5
+              ],
+              [
+                251.19,
+                0,
+                0.5
+              ],
+              [
+                253.03,
+                0,
+                0.5
+              ],
+              [
+                254.45,
+                0,
+                0.5
+              ],
+              [
+                255.89,
+                0,
+                0.5
+              ],
+              [
+                257.25,
+                0,
+                0.5
+              ],
+              [
+                258.19,
+                0,
+                0.5
+              ],
+              [
+                258.72,
+                0,
+                0.5
+              ],
+              [
+                259.23,
+                0,
+                0.5
+              ],
+              [
+                260.16,
+                0,
+                0.5
+              ],
+              [
+                262.89,
+                0,
+                0.5
+              ],
+              [
+                266.55,
+                0,
+                0.5
+              ],
+              [
+                269.38,
+                0,
+                0.5
+              ],
+              [
+                271.25,
+                0,
+                0.5
+              ],
+              [
+                272.66,
+                0,
+                0.5
+              ],
+              [
+                273.68,
+                0,
+                0.5
+              ],
+              [
+                274.43,
+                0,
+                0.5
+              ],
+              [
+                275.58,
+                0,
+                0.5
+              ],
+              [
+                277.45,
+                0,
+                0.5
+              ],
+              [
+                280.33,
+                0,
+                0.5
+              ],
+              [
+                284.2,
+                0,
+                0.5
+              ],
+              [
+                288.93,
+                0,
+                0.5
+              ],
+              [
+                293.21,
+                0,
+                0.5
+              ],
+              [
+                296.04,
+                0,
+                0.5
+              ],
+              [
+                297.94,
+                0,
+                0.5
+              ],
+              [
+                298.95,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "3cc17304-6661-4c5f-3a34-363c5c4b1d90": {
+            "id": "3cc17304-6661-4c5f-3a34-363c5c4b1d90",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "page",
+            "childIndex": 40,
+            "point": [
+              5805.04,
+              25.3
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0.29,
+                0.03,
+                0.5
+              ],
+              [
+                0.91,
+                0,
+                0.5
+              ],
+              [
+                5,
+                0,
+                0.5
+              ],
+              [
+                15.57,
+                0,
+                0.5
+              ],
+              [
+                31.71,
+                0,
+                0.5
+              ],
+              [
+                48.7,
+                0,
+                0.5
+              ],
+              [
+                65.31,
+                0,
+                0.5
+              ],
+              [
+                81.77,
+                0,
+                0.5
+              ],
+              [
+                97.16,
+                0,
+                0.5
+              ],
+              [
+                113.8,
+                0,
+                0.5
+              ],
+              [
+                129.69,
+                0,
+                0.5
+              ],
+              [
+                144.15,
+                0,
+                0.5
+              ],
+              [
+                158.04,
+                0,
+                0.5
+              ],
+              [
+                171.21,
+                0,
+                0.5
+              ],
+              [
+                183.65,
+                0,
+                0.5
+              ],
+              [
+                194.77,
+                0,
+                0.5
+              ],
+              [
+                205.03,
+                0,
+                0.5
+              ],
+              [
+                214.67,
+                0,
+                0.5
+              ],
+              [
+                223.81,
+                0,
+                0.5
+              ],
+              [
+                232.51,
+                0,
+                0.5
+              ],
+              [
+                240.53,
+                0,
+                0.5
+              ],
+              [
+                247.77,
+                0,
+                0.5
+              ],
+              [
+                254.34,
+                0,
+                0.5
+              ],
+              [
+                261.6,
+                0,
+                0.5
+              ],
+              [
+                268.9,
+                0,
+                0.5
+              ],
+              [
+                275.26,
+                0,
+                0.5
+              ],
+              [
+                281.03,
+                0,
+                0.5
+              ],
+              [
+                285.57,
+                0,
+                0.5
+              ],
+              [
+                288.85,
+                0,
+                0.5
+              ],
+              [
+                290.94,
+                0,
+                0.5
+              ],
+              [
+                292.38,
+                0,
+                0.5
+              ],
+              [
+                293.21,
+                0,
+                0.5
+              ],
+              [
+                293.58,
+                0,
+                0.5
+              ],
+              [
+                293.9,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "f029371d-27ff-43d9-21e9-3f2743f8a08d": {
+            "id": "f029371d-27ff-43d9-21e9-3f2743f8a08d",
+            "type": "rectangle",
+            "name": "Rectangle",
+            "parentId": "page",
+            "childIndex": 41,
+            "point": [
+              5535.05,
+              -733.42
+            ],
+            "size": [
+              835.02,
+              298.58
+            ],
+            "rotation": 1.5707963267948966,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "b2866194-d5fb-43e9-2456-a3bb20115dc9": {
+            "id": "b2866194-d5fb-43e9-2456-a3bb20115dc9",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "page",
+            "childIndex": 42,
+            "point": [
+              5804.82,
+              -370.78
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0.29,
+                0,
+                0.5
+              ],
+              [
+                2.7,
+                0,
+                0.5
+              ],
+              [
+                12.72,
+                0,
+                0.5
+              ],
+              [
+                34.83,
+                0,
+                0.5
+              ],
+              [
+                64.86,
+                0,
+                0.5
+              ],
+              [
+                96.86,
+                0,
+                0.5
+              ],
+              [
+                121.09,
+                0,
+                0.5
+              ],
+              [
+                138.08,
+                0,
+                0.5
+              ],
+              [
+                153.47,
+                0,
+                0.5
+              ],
+              [
+                164.85,
+                0,
+                0.5
+              ],
+              [
+                173.56,
+                0,
+                0.5
+              ],
+              [
+                181.79,
+                0,
+                0.5
+              ],
+              [
+                190.68,
+                0,
+                0.5
+              ],
+              [
+                200.06,
+                0,
+                0.5
+              ],
+              [
+                208.95,
+                0,
+                0.5
+              ],
+              [
+                216.7,
+                0,
+                0.5
+              ],
+              [
+                223.16,
+                0,
+                0.5
+              ],
+              [
+                227.49,
+                0,
+                0.5
+              ],
+              [
+                231.15,
+                0,
+                0.5
+              ],
+              [
+                234.78,
+                0,
+                0.5
+              ],
+              [
+                238.12,
+                0,
+                0.5
+              ],
+              [
+                241.38,
+                0,
+                0.5
+              ],
+              [
+                244.51,
+                0,
+                0.5
+              ],
+              [
+                247.69,
+                0,
+                0.5
+              ],
+              [
+                250.84,
+                0,
+                0.5
+              ],
+              [
+                254.02,
+                0,
+                0.5
+              ],
+              [
+                256.85,
+                0,
+                0.5
+              ],
+              [
+                259.23,
+                0,
+                0.5
+              ],
+              [
+                261.1,
+                0,
+                0.5
+              ],
+              [
+                262.49,
+                0,
+                0.5
+              ],
+              [
+                262.81,
+                0,
+                0.5
+              ],
+              [
+                263.42,
+                0,
+                0.5
+              ],
+              [
+                265.45,
+                0,
+                0.5
+              ],
+              [
+                269.75,
+                0,
+                0.5
+              ],
+              [
+                275.66,
+                0,
+                0.5
+              ],
+              [
+                281.11,
+                0,
+                0.5
+              ],
+              [
+                284.87,
+                0,
+                0.5
+              ],
+              [
+                287.22,
+                0,
+                0.5
+              ],
+              [
+                289.2,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "8cb618c5-8dc0-4985-27b9-44e5b4940475": {
+            "id": "8cb618c5-8dc0-4985-27b9-44e5b4940475",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "page",
+            "childIndex": 43,
+            "point": [
+              5805.81,
+              -584.06
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0.83,
+                0,
+                0.5
+              ],
+              [
+                3.95,
+                0,
+                0.5
+              ],
+              [
+                9.67,
+                0,
+                0.5
+              ],
+              [
+                17.95,
+                0,
+                0.5
+              ],
+              [
+                28.66,
+                0,
+                0.5
+              ],
+              [
+                40.39,
+                0,
+                0.5
+              ],
+              [
+                51.37,
+                0,
+                0.5
+              ],
+              [
+                62.38,
+                0,
+                0.5
+              ],
+              [
+                74.08,
+                0,
+                0.5
+              ],
+              [
+                85.08,
+                0,
+                0.5
+              ],
+              [
+                96.09,
+                0,
+                0.5
+              ],
+              [
+                106.4,
+                0,
+                0.5
+              ],
+              [
+                115.43,
+                0,
+                0.5
+              ],
+              [
+                124.14,
+                0,
+                0.5
+              ],
+              [
+                132.47,
+                0,
+                0.5
+              ],
+              [
+                141.13,
+                0,
+                0.5
+              ],
+              [
+                149.68,
+                0,
+                0.5
+              ],
+              [
+                156.94,
+                0,
+                0.5
+              ],
+              [
+                163.41,
+                0,
+                0.5
+              ],
+              [
+                169.34,
+                0,
+                0.5
+              ],
+              [
+                175.16,
+                0,
+                0.5
+              ],
+              [
+                181.52,
+                0,
+                0.5
+              ],
+              [
+                188.04,
+                0,
+                0.5
+              ],
+              [
+                195.14,
+                0,
+                0.5
+              ],
+              [
+                202.97,
+                0,
+                0.5
+              ],
+              [
+                211.84,
+                0,
+                0.5
+              ],
+              [
+                221.11,
+                0,
+                0.5
+              ],
+              [
+                229.36,
+                0,
+                0.5
+              ],
+              [
+                236.6,
+                0,
+                0.5
+              ],
+              [
+                242.21,
+                0,
+                0.5
+              ],
+              [
+                246.06,
+                0,
+                0.5
+              ],
+              [
+                248.86,
+                0,
+                0.5
+              ],
+              [
+                251.19,
+                0,
+                0.5
+              ],
+              [
+                253.03,
+                0,
+                0.5
+              ],
+              [
+                254.45,
+                0,
+                0.5
+              ],
+              [
+                255.89,
+                0,
+                0.5
+              ],
+              [
+                257.25,
+                0,
+                0.5
+              ],
+              [
+                258.19,
+                0,
+                0.5
+              ],
+              [
+                258.72,
+                0,
+                0.5
+              ],
+              [
+                259.23,
+                0,
+                0.5
+              ],
+              [
+                260.16,
+                0,
+                0.5
+              ],
+              [
+                262.89,
+                0,
+                0.5
+              ],
+              [
+                266.55,
+                0,
+                0.5
+              ],
+              [
+                269.38,
+                0,
+                0.5
+              ],
+              [
+                271.25,
+                0,
+                0.5
+              ],
+              [
+                272.66,
+                0,
+                0.5
+              ],
+              [
+                273.68,
+                0,
+                0.5
+              ],
+              [
+                274.43,
+                0,
+                0.5
+              ],
+              [
+                275.58,
+                0,
+                0.5
+              ],
+              [
+                277.45,
+                0,
+                0.5
+              ],
+              [
+                280.33,
+                0,
+                0.5
+              ],
+              [
+                284.2,
+                0,
+                0.5
+              ],
+              [
+                288.93,
+                0,
+                0.5
+              ],
+              [
+                293.21,
+                0,
+                0.5
+              ],
+              [
+                296.04,
+                0,
+                0.5
+              ],
+              [
+                297.94,
+                0,
+                0.5
+              ],
+              [
+                298.95,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "252303d8-a642-4133-0507-a38d54e00cc1": {
+            "id": "252303d8-a642-4133-0507-a38d54e00cc1",
+            "type": "draw",
+            "name": "Draw",
+            "parentId": "page",
+            "childIndex": 44,
+            "point": [
+              5805.04,
+              -800.56
+            ],
+            "rotation": 0,
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "points": [
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0,
+                0,
+                0.5
+              ],
+              [
+                0.29,
+                0.03,
+                0.5
+              ],
+              [
+                0.91,
+                0,
+                0.5
+              ],
+              [
+                5,
+                0,
+                0.5
+              ],
+              [
+                15.57,
+                0,
+                0.5
+              ],
+              [
+                31.71,
+                0,
+                0.5
+              ],
+              [
+                48.7,
+                0,
+                0.5
+              ],
+              [
+                65.31,
+                0,
+                0.5
+              ],
+              [
+                81.77,
+                0,
+                0.5
+              ],
+              [
+                97.16,
+                0,
+                0.5
+              ],
+              [
+                113.8,
+                0,
+                0.5
+              ],
+              [
+                129.69,
+                0,
+                0.5
+              ],
+              [
+                144.15,
+                0,
+                0.5
+              ],
+              [
+                158.04,
+                0,
+                0.5
+              ],
+              [
+                171.21,
+                0,
+                0.5
+              ],
+              [
+                183.65,
+                0,
+                0.5
+              ],
+              [
+                194.77,
+                0,
+                0.5
+              ],
+              [
+                205.03,
+                0,
+                0.5
+              ],
+              [
+                214.67,
+                0,
+                0.5
+              ],
+              [
+                223.81,
+                0,
+                0.5
+              ],
+              [
+                232.51,
+                0,
+                0.5
+              ],
+              [
+                240.53,
+                0,
+                0.5
+              ],
+              [
+                247.77,
+                0,
+                0.5
+              ],
+              [
+                254.34,
+                0,
+                0.5
+              ],
+              [
+                261.6,
+                0,
+                0.5
+              ],
+              [
+                268.9,
+                0,
+                0.5
+              ],
+              [
+                275.26,
+                0,
+                0.5
+              ],
+              [
+                281.03,
+                0,
+                0.5
+              ],
+              [
+                285.57,
+                0,
+                0.5
+              ],
+              [
+                288.85,
+                0,
+                0.5
+              ],
+              [
+                290.94,
+                0,
+                0.5
+              ],
+              [
+                292.38,
+                0,
+                0.5
+              ],
+              [
+                293.21,
+                0,
+                0.5
+              ],
+              [
+                293.58,
+                0,
+                0.5
+              ],
+              [
+                293.9,
+                0,
+                0.5
+              ]
+            ],
+            "isComplete": true
+          },
+          "f9345a5e-3377-42fa-310f-78987b9140fd": {
+            "id": "f9345a5e-3377-42fa-310f-78987b9140fd",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 45,
+            "point": [
+              5277.65,
+              598.05
+            ],
+            "rotation": 0,
+            "bend": 0,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  126.98
+                ],
+                "canBind": true,
+                "bindingId": "e45030ff-e5ad-4344-164a-8ddaaf40d2c0"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  533.66,
+                  0
+                ],
+                "canBind": true,
+                "bindingId": "c2f78bdb-8824-48f5-38e0-cd84836b8f48"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  266.83,
+                  63.49
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "orange",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "d95a4e01-1fda-44ff-3fc0-1ebaa5cf6705": {
+            "id": "d95a4e01-1fda-44ff-3fc0-1ebaa5cf6705",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 46,
+            "point": [
+              5819.31,
+              509.36
+            ],
+            "rotation": 0,
+            "text": "arr 1",
+            "style": {
+              "color": "orange",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "25d74485-c1a5-4c62-1b71-cadcadc720be": {
+            "id": "25d74485-c1a5-4c62-1b71-cadcadc720be",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 47,
+            "point": [
+              5812.97,
+              291.06
+            ],
+            "rotation": 0,
+            "text": "arr 2",
+            "style": {
+              "color": "orange",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "da18fb0b-d417-48a6-1390-98199e5a53b1": {
+            "id": "da18fb0b-d417-48a6-1390-98199e5a53b1",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 48,
+            "point": [
+              5137.9,
+              -47.7
+            ],
+            "rotation": 0,
+            "bend": -0.000009838997598250264,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true,
+                "bindingId": "e7a6577f-3ccf-4957-3feb-dcbb2dafff54"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  667.07,
+                  392.6
+                ],
+                "canBind": true,
+                "bindingId": "5eba3885-6bb0-48b3-2e90-1615217104c2"
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  333.54,
+                  196.3
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "orange",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "77808253-eb95-4166-2518-47fc3bc0144a": {
+            "id": "77808253-eb95-4166-2518-47fc3bc0144a",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 49,
+            "point": [
+              6205.83,
+              361.13
+            ],
+            "rotation": 0,
+            "bend": 0,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  209.32,
+                  0
+                ],
+                "canBind": true
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  104.66,
+                  0
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "7bd4f073-0235-49a5-3db1-a7a90176c159": {
+            "id": "7bd4f073-0235-49a5-3db1-a7a90176c159",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 50,
+            "point": [
+              6451.89,
+              321.48
+            ],
+            "rotation": 0,
+            "text": "Current \nArray",
+            "style": {
+              "color": "white",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 0.7349636767580806,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "4b29e29c-af78-4671-02d0-21d8955f6a3a": {
+            "id": "4b29e29c-af78-4671-02d0-21d8955f6a3a",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 51,
+            "point": [
+              5275.28,
+              559.92
+            ],
+            "rotation": 0,
+            "text": "push new array",
+            "style": {
+              "color": "orange",
+              "size": "medium",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "ff5ccabe-8574-45b7-2f7b-e0b275371a91": {
+            "id": "ff5ccabe-8574-45b7-2f7b-e0b275371a91",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 52,
+            "point": [
+              5369.33,
+              -14.63
+            ],
+            "rotation": 0,
+            "text": "push new array",
+            "style": {
+              "color": "orange",
+              "size": "medium",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "9e732240-6279-4f84-0b23-416db9e1a831": {
+            "id": "9e732240-6279-4f84-0b23-416db9e1a831",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 53,
+            "point": [
+              4338.35,
+              -667.65
+            ],
+            "rotation": 0,
+            "bend": 0,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true,
+                "bindingId": "bb75d469-b328-44ee-1960-19fab78808da"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  389.33,
+                  107.74
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  194.67,
+                  53.87
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "orange",
+              "size": "medium",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "994e46ec-7d27-4cff-1440-93db9c316448": {
+            "id": "994e46ec-7d27-4cff-1440-93db9c316448",
+            "type": "arrow",
+            "name": "Arrow",
+            "parentId": "page",
+            "childIndex": 54,
+            "point": [
+              4337.34,
+              -856.14
+            ],
+            "rotation": 0,
+            "bend": 0.0000026654417705615405,
+            "handles": {
+              "start": {
+                "id": "start",
+                "index": 0,
+                "point": [
+                  0,
+                  0
+                ],
+                "canBind": true,
+                "bindingId": "7320d884-a829-456a-3dd8-ca297de72afd"
+              },
+              "end": {
+                "id": "end",
+                "index": 1,
+                "point": [
+                  383.57,
+                  226.88
+                ],
+                "canBind": true
+              },
+              "bend": {
+                "id": "bend",
+                "index": 2,
+                "point": [
+                  191.79,
+                  113.44
+                ]
+              }
+            },
+            "decorations": {
+              "end": "arrow"
+            },
+            "style": {
+              "color": "orange",
+              "size": "medium",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "textAlign": "start",
+              "font": "mono"
+            },
+            "label": "",
+            "labelPoint": [
+              0.5,
+              0.5
+            ]
+          },
+          "408929a4-4a51-4cd2-0786-c46d193ec4c2": {
+            "id": "408929a4-4a51-4cd2-0786-c46d193ec4c2",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 53,
+            "point": [
+              4757.5,
+              -625.89
+            ],
+            "rotation": 0,
+            "text": "pop current array\nand add to current",
+            "style": {
+              "color": "orange",
+              "size": "medium",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "8db5b775-eec4-482e-3c3b-318beaf544a6": {
+            "id": "8db5b775-eec4-482e-3c3b-318beaf544a6",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 55,
+            "point": [
+              4242.94,
+              58.65
+            ],
+            "rotation": 0,
+            "text": ",",
+            "style": {
+              "color": "violet",
+              "size": "large",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "eae1bc06-ced5-488d-3e09-5ef0941b4b24": {
+            "id": "eae1bc06-ced5-488d-3e09-5ef0941b4b24",
+            "type": "sticky",
+            "name": "Sticky",
+            "parentId": "page",
+            "childIndex": 8,
+            "point": [
+              2152.67,
+              640.45
+            ],
+            "size": [
+              200,
+              200
+            ],
+            "text": "=> inputs are the same integer\n \n => no-decision",
+            "rotation": 0,
+            "style": {
+              "color": "yellow",
+              "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          }
+        },
+        "bindings": {
+          "472fc37a-7cc3-48fb-37ef-f7ed3e1f0b1c": {
+            "id": "472fc37a-7cc3-48fb-37ef-f7ed3e1f0b1c",
+            "type": "arrow",
+            "fromId": "3de5ca4b-256c-44f5-3ccd-313f46c2c4b5",
+            "toId": "baa5904f-1ccc-4126-38b2-8f943462aaf9",
+            "handleId": "start",
+            "point": [
+              0.17,
+              0.38
+            ],
+            "distance": 8
+          },
+          "72fa22c5-690e-442b-0289-1704aea90a1a": {
+            "id": "72fa22c5-690e-442b-0289-1704aea90a1a",
+            "type": "arrow",
+            "fromId": "ec8390f6-7a24-4cec-19a5-81268eac6aea",
+            "toId": "4b93d99f-f75c-4f28-105a-e887add7ad56",
+            "handleId": "start",
+            "point": [
+              0.17,
+              0.32
+            ],
+            "distance": 8
+          },
+          "6c627394-05a3-4a36-0288-d849449ea4e9": {
+            "id": "6c627394-05a3-4a36-0288-d849449ea4e9",
+            "type": "arrow",
+            "fromId": "ec8390f6-7a24-4cec-19a5-81268eac6aea",
+            "toId": "8928d9f0-3bbc-4293-01d1-7d52c31fa624",
+            "handleId": "end",
+            "point": [
+              0.23,
+              0.18
+            ],
+            "distance": 8
+          },
+          "63428feb-b5c9-451a-1f55-e6816d3e9562": {
+            "id": "63428feb-b5c9-451a-1f55-e6816d3e9562",
+            "type": "arrow",
+            "fromId": "4a28b6f0-c693-40f6-1974-c4a5e918bca9",
+            "toId": "4be68685-d2a3-4004-24bb-7f9375dc236e",
+            "handleId": "end",
+            "point": [
+              0.57,
+              0.13
+            ],
+            "distance": 16
+          },
+          "3068568c-4d26-42f6-3ca2-df11a088e44c": {
+            "id": "3068568c-4d26-42f6-3ca2-df11a088e44c",
+            "type": "arrow",
+            "fromId": "4a28b6f0-c693-40f6-1974-c4a5e918bca9",
+            "toId": "66122e92-e4ef-4fcf-2508-14f3235b5c4d",
+            "handleId": "start",
+            "point": [
+              0.33,
+              0.84
+            ],
+            "distance": 16
+          },
+          "e590e249-cb1d-4e74-12d6-8641dca261ce": {
+            "id": "e590e249-cb1d-4e74-12d6-8641dca261ce",
+            "type": "arrow",
+            "fromId": "7227ef0a-0802-4b85-0dd4-edd77a83dd00",
+            "toId": "19b70479-53f5-4421-3ce1-bfd81210dc39",
+            "handleId": "start",
+            "point": [
+              0.43,
+              0.88
+            ],
+            "distance": 16
+          },
+          "dcf610dd-2976-43be-238c-cf5091d7bc04": {
+            "id": "dcf610dd-2976-43be-238c-cf5091d7bc04",
+            "type": "arrow",
+            "fromId": "7227ef0a-0802-4b85-0dd4-edd77a83dd00",
+            "toId": "e875cdd8-c98f-415f-0519-4d6bbbd95235",
+            "handleId": "end",
+            "point": [
+              0.62,
+              0.14
+            ],
+            "distance": 16
+          },
+          "9e32585a-9668-417a-37a9-49b317091c66": {
+            "id": "9e32585a-9668-417a-37a9-49b317091c66",
+            "type": "arrow",
+            "fromId": "03bb92e8-d192-4037-27b7-7138ec468147",
+            "toId": "93f23519-68fe-46ee-0a29-3bd8935d7ab2",
+            "handleId": "start",
+            "point": [
+              0.34,
+              0.68
+            ],
+            "distance": 8
+          },
+          "35483a2c-43e8-4df7-3753-6b5e03237279": {
+            "id": "35483a2c-43e8-4df7-3753-6b5e03237279",
+            "type": "arrow",
+            "fromId": "03bb92e8-d192-4037-27b7-7138ec468147",
+            "toId": "d1911ecd-2a8e-4379-2bc6-8b91fb7282b5",
+            "handleId": "end",
+            "point": [
+              0.52,
+              0.7
+            ],
+            "distance": 8
+          },
+          "bbe06dae-5225-45d2-0aab-43e1a882d515": {
+            "id": "bbe06dae-5225-45d2-0aab-43e1a882d515",
+            "type": "arrow",
+            "fromId": "51c38f55-7ab6-4567-2951-e60d8c6fc40d",
+            "toId": "d2fb15cf-c7f4-4e9c-0bda-490556d50cb6",
+            "handleId": "start",
+            "point": [
+              0.5,
+              0.5
+            ],
+            "distance": 8
+          },
+          "80a0a3ea-c8c7-42d4-2d44-a50c8f3d2a17": {
+            "id": "80a0a3ea-c8c7-42d4-2d44-a50c8f3d2a17",
+            "type": "arrow",
+            "fromId": "51c38f55-7ab6-4567-2951-e60d8c6fc40d",
+            "toId": "d1911ecd-2a8e-4379-2bc6-8b91fb7282b5",
+            "handleId": "end",
+            "point": [
+              0.79,
+              0.6
+            ],
+            "distance": 8
+          },
+          "c422c43e-761b-41f5-38bf-3502718a39fc": {
+            "id": "c422c43e-761b-41f5-38bf-3502718a39fc",
+            "type": "arrow",
+            "fromId": "141455a9-f720-40cf-30fa-6a23dfdeaa95",
+            "toId": "37f0692c-0af1-4d41-02ee-55f25160e650",
+            "handleId": "start",
+            "point": [
+              0.5,
+              0.5
+            ],
+            "distance": 8
+          },
+          "5c076d70-14c9-451c-0587-20bf9701c95d": {
+            "id": "5c076d70-14c9-451c-0587-20bf9701c95d",
+            "type": "arrow",
+            "fromId": "141455a9-f720-40cf-30fa-6a23dfdeaa95",
+            "toId": "d1911ecd-2a8e-4379-2bc6-8b91fb7282b5",
+            "handleId": "end",
+            "point": [
+              0.85,
+              0.7
+            ],
+            "distance": 8
+          },
+          "ecc5c2e2-30a4-465e-2de8-fd2d90df7a7b": {
+            "id": "ecc5c2e2-30a4-465e-2de8-fd2d90df7a7b",
+            "type": "arrow",
+            "fromId": "88feb563-602c-4e7a-3d8c-9380f2c07bd6",
+            "toId": "41479dc8-b355-4156-3afc-bb3a6eb57be9",
+            "handleId": "end",
+            "point": [
+              0.52,
+              0.7
+            ],
+            "distance": 8
+          },
+          "6b311163-9a61-44b6-36c1-2e0d52ff4107": {
+            "id": "6b311163-9a61-44b6-36c1-2e0d52ff4107",
+            "type": "arrow",
+            "fromId": "88feb563-602c-4e7a-3d8c-9380f2c07bd6",
+            "toId": "2ce9b62d-f3fb-4947-2c9f-7408261decf2",
+            "handleId": "start",
+            "point": [
+              0.06,
+              0.58
+            ],
+            "distance": 8
+          },
+          "8c8f285a-9648-4e5b-2bf4-6162bc3db1d3": {
+            "id": "8c8f285a-9648-4e5b-2bf4-6162bc3db1d3",
+            "type": "arrow",
+            "fromId": "14d7f125-b024-416e-0004-1505704ed635",
+            "toId": "e70504e2-bcd8-4bbe-1d4d-566f2e1e4c24",
+            "handleId": "start",
+            "point": [
+              0.5,
+              0.5
+            ],
+            "distance": 8
+          },
+          "e45030ff-e5ad-4344-164a-8ddaaf40d2c0": {
+            "id": "e45030ff-e5ad-4344-164a-8ddaaf40d2c0",
+            "type": "arrow",
+            "fromId": "f9345a5e-3377-42fa-310f-78987b9140fd",
+            "toId": "d1911ecd-2a8e-4379-2bc6-8b91fb7282b5",
+            "handleId": "start",
+            "point": [
+              0.5,
+              0.5
+            ],
+            "distance": 8
+          },
+          "e7a6577f-3ccf-4957-3feb-dcbb2dafff54": {
+            "id": "e7a6577f-3ccf-4957-3feb-dcbb2dafff54",
+            "type": "arrow",
+            "fromId": "da18fb0b-d417-48a6-1390-98199e5a53b1",
+            "toId": "41479dc8-b355-4156-3afc-bb3a6eb57be9",
+            "handleId": "start",
+            "point": [
+              0.5,
+              0.5
+            ],
+            "distance": 8
+          },
+          "c2f78bdb-8824-48f5-38e0-cd84836b8f48": {
+            "id": "c2f78bdb-8824-48f5-38e0-cd84836b8f48",
+            "type": "arrow",
+            "fromId": "f9345a5e-3377-42fa-310f-78987b9140fd",
+            "toId": "d95a4e01-1fda-44ff-3fc0-1ebaa5cf6705",
+            "handleId": "end",
+            "point": [
+              0.5,
+              0.5
+            ],
+            "distance": 8
+          },
+          "5eba3885-6bb0-48b3-2e90-1615217104c2": {
+            "id": "5eba3885-6bb0-48b3-2e90-1615217104c2",
+            "type": "arrow",
+            "fromId": "da18fb0b-d417-48a6-1390-98199e5a53b1",
+            "toId": "25d74485-c1a5-4c62-1b71-cadcadc720be",
+            "handleId": "end",
+            "point": [
+              0.32,
+              0.97
+            ],
+            "distance": 8
+          },
+          "bb75d469-b328-44ee-1960-19fab78808da": {
+            "id": "bb75d469-b328-44ee-1960-19fab78808da",
+            "type": "arrow",
+            "fromId": "9e732240-6279-4f84-0b23-416db9e1a831",
+            "toId": "00abc8d5-b48e-4fe7-2c6a-c438de4f5409",
+            "handleId": "start",
+            "point": [
+              0.5,
+              0.5
+            ],
+            "distance": 8
+          },
+          "7320d884-a829-456a-3dd8-ca297de72afd": {
+            "id": "7320d884-a829-456a-3dd8-ca297de72afd",
+            "type": "arrow",
+            "fromId": "994e46ec-7d27-4cff-1440-93db9c316448",
+            "toId": "0bd2e9e6-fa1f-4389-370b-408701343954",
+            "handleId": "start",
+            "point": [
+              0.5,
+              0.5
+            ],
+            "distance": 8
+          }
+        }
+      }
+    },
+    "pageStates": {
+      "page": {
+        "id": "page",
+        "selectedIds": [],
+        "camera": {
+          "point": [
+            206.6,
+            22.82
+          ],
+          "zoom": 1
+        }
+      }
+    },
+    "assets": {
+      "f41c2b3b-aea1-486b-31a0-56887b8ff9b0": {
+        "id": "f41c2b3b-aea1-486b-31a0-56887b8ff9b0",
+        "type": "image",
+        "name": "Screenshot 2022-12-13 at 10.41.49 PM.png",
+        "src": "data:image/png;base64,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",
+        "size": [
+          406,
+          202
+        ]
+      }
+    }
+  },
+  "assets": {}
+}
