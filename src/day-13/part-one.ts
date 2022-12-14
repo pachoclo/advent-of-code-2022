@@ -19,6 +19,7 @@ export async function partOne(inputFile: string) {
 // -------------------------------------------------- //
 
 type Item = Array<Item> | number
+
 type Pair = [left: Item, right: Item]
 
 function parseInput(input: string) {
@@ -102,12 +103,7 @@ function comparePair([left, right]: Pair): -1 | 1 | 0 {
   }
 
   if (left instanceof Array && right instanceof Array) {
-    for (let i = 0; i < left.length; i++) {
-      if (i >= right.length) {
-        // right ran out of items first
-        return -1
-      }
-
+    for (let i = 0; i < left.length && right.length; i++) {
       let res = comparePair([left[i], right[i]])
 
       if (res !== 0) {
@@ -116,10 +112,12 @@ function comparePair([left, right]: Pair): -1 | 1 | 0 {
       }
     }
 
-    if (right.length > left.length) {
-      // left ran out of items
-      return 1
-    }
+    // a list ran out of items and no decision was made
+    // attempt tp make a decision using the lists' length
+    let result: 1 | -1 | 0 =
+      right.length > left.length ? 1 : left.length > right.length ? -1 : 0
+
+    return result
   }
 
   if (typeof left === 'number' && right instanceof Array) {
