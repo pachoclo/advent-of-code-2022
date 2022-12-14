@@ -13,9 +13,7 @@ export async function partOne(inputFile: string) {
     }
   }
 
-  return correctOrderPairIndices
-    .filter((index) => index !== null)
-    .reduce((res, index) => res + index, 0)
+  return correctOrderPairIndices.reduce((res, index) => res + index, 0)
 }
 
 // -------------------------------------------------- //
