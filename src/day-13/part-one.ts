@@ -2,23 +2,22 @@ import { readFile } from 'fs/promises'
 
 export async function partOne(inputFile: string) {
   let input = await readFile(`${__dirname}/${inputFile}`, 'utf-8')
+
   let pairs = parseInput(input)
 
-  let indices: number[] = []
+  let correctOrderPairIndices: number[] = []
 
   for (let i = 0; i < pairs.length; i++) {
-    const pair = pairs[i]
-
-    console.log(`\ncompairing pair no. ${i + 1}`)
-
-    if (comparePair(pair)) {
-      indices.push(i + 1)
+    if (comparePair(pairs[i]) === 1) {
+      correctOrderPairIndices.push(i + 1)
     }
   }
 
-  console.log(indices)
+  console.log(correctOrderPairIndices)
 
-  return indices.reduce((res, index) => res + index, 0)
+  return correctOrderPairIndices
+    .filter((index) => index !== null)
+    .reduce((res, index) => res + index, 0)
 }
 
 // -------------------------------------------------- //
@@ -27,18 +26,12 @@ type Item = Array<Item> | number
 type Pair = [left: Item, right: Item]
 
 function parseInput(input: string) {
-  // split into pairs of lines
-  const pairs = input.split('\n\n').map((pairLines) => {
+  const pairs: Pair[] = input.split('\n\n').map((pairLines) => {
     const [left, right] = pairLines.split('\n')
-    return [left, right]
-  })
-
-  let listPairs: Pair[] = pairs.map((pair) => {
-    let [left, right] = pair
     return [parseListLine(left)!, parseListLine(right)!]
   })
 
-  return listPairs
+  return pairs
 }
 
 function parseListLine(listLine: string) {
@@ -86,31 +79,28 @@ function parseListLine(listLine: string) {
     let number = Number.parseInt(char)
 
     if (!isNaN(number)) {
-      // it's an actual number
+      // it's an actual number, wait for a comma to parse the full number
       currentNumberAsStr += char
       continue
     }
   }
 }
 
-function comparePair([left, right]: Pair): boolean | 'no-decision' {
-  // console.log(JSON.stringify(left))
-  // console.log(JSON.stringify(right), '\n')
-
+function comparePair([left, right]: Pair): -1 | 1 | 0 {
   if (typeof left === 'number' && typeof right === 'number') {
     console.log(`  comparing numbers: ${left} and ${right}`)
 
     if (left < right) {
       console.log('👍 right order')
-      return true
+      return 1
     }
 
     if (left > right) {
       console.log('🚫 wrong order')
-      return false
+      return -1
     }
 
-    return 'no-decision'
+    return 0
   }
 
   if (left instanceof Array && right instanceof Array) {
@@ -118,12 +108,12 @@ function comparePair([left, right]: Pair): boolean | 'no-decision' {
       if (i >= right.length) {
         // right ran out of items first
         console.log('🚫 wrong order')
-        return false
+        return -1
       }
 
       let res = comparePair([left[i], right[i]])
 
-      if (res !== 'no-decision') {
+      if (res !== 0) {
         // decision was made, return the result
         return res
       }
@@ -132,7 +122,7 @@ function comparePair([left, right]: Pair): boolean | 'no-decision' {
     if (right.length > left.length) {
       // left ran out of items
       console.log('👍 right order')
-      return true
+      return 1
     }
   }
 
@@ -144,5 +134,5 @@ function comparePair([left, right]: Pair): boolean | 'no-decision' {
     return comparePair([left, [right]])
   }
 
-  return 'no-decision'
+  return 0
 }
