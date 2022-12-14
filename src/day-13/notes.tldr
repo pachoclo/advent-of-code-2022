@@ -1028,28 +1028,6 @@
               "textAlign": "start"
             }
           },
-          "a22cf854-5e2d-476f-3e0c-2f231f3ecb49": {
-            "id": "a22cf854-5e2d-476f-3e0c-2f231f3ecb49",
-            "type": "text",
-            "name": "Text",
-            "parentId": "page",
-            "childIndex": 18,
-            "point": [
-              -160.51,
-              -1570.15
-            ],
-            "rotation": 0,
-            "text": "parsing the input is the hardest part...",
-            "style": {
-              "color": "red",
-              "size": "large",
-              "isFilled": true,
-              "dash": "solid",
-              "scale": 1,
-              "font": "mono",
-              "textAlign": "start"
-            }
-          },
           "668003f6-31a6-44f3-1527-3991c565f3a7": {
             "id": "668003f6-31a6-44f3-1527-3991c565f3a7",
             "type": "text",
@@ -1057,8 +1035,8 @@
             "parentId": "page",
             "childIndex": 19,
             "point": [
-              3641.29,
-              -1804.53
+              4132.02,
+              -1939.43
             ],
             "rotation": 0,
             "text": "Base case:\n \n- we have a complete list\n- we add the complete list to \n  the previous one\n- if there is no previous one\n  => we completed parsing the list",
@@ -5048,36 +5026,37 @@
             "childIndex": 53,
             "point": [
               4338.35,
-              -667.65
+              -662.73
             ],
             "rotation": 0,
-            "bend": 0,
+            "bend": -4.634172170374819e-7,
             "handles": {
               "start": {
                 "id": "start",
                 "index": 0,
                 "point": [
                   0,
-                  0
+                  7.7
                 ],
                 "canBind": true,
-                "bindingId": "bb75d469-b328-44ee-1960-19fab78808da"
+                "bindingId": "88c415e7-f183-4a99-3502-8bd42a816684"
               },
               "end": {
                 "id": "end",
                 "index": 1,
                 "point": [
-                  389.33,
-                  107.74
+                  441.63,
+                  0
                 ],
-                "canBind": true
+                "canBind": true,
+                "bindingId": "c86c8112-0369-42ef-3564-20c6c65ea296"
               },
               "bend": {
                 "id": "bend",
                 "index": 2,
                 "point": [
-                  194.67,
-                  53.87
+                  220.82,
+                  3.85
                 ]
               }
             },
@@ -5107,10 +5086,10 @@
             "childIndex": 54,
             "point": [
               4337.34,
-              -856.14
+              -869.01
             ],
             "rotation": 0,
-            "bend": 0.0000026654417705615405,
+            "bend": 0.000018988445199618356,
             "handles": {
               "start": {
                 "id": "start",
@@ -5126,17 +5105,18 @@
                 "id": "end",
                 "index": 1,
                 "point": [
-                  383.57,
-                  226.88
+                  442.64,
+                  139.4
                 ],
-                "canBind": true
+                "canBind": true,
+                "bindingId": "bdfe7b25-b6d6-4aa3-3533-aac3c8891c61"
               },
               "bend": {
                 "id": "bend",
                 "index": 2,
                 "point": [
-                  191.79,
-                  113.44
+                  221.32,
+                  69.7
                 ]
               }
             },
@@ -5165,11 +5145,11 @@
             "parentId": "page",
             "childIndex": 53,
             "point": [
-              4757.5,
-              -625.89
+              4787.98,
+              -721.68
             ],
             "rotation": 0,
-            "text": "pop current array\nand add to current",
+            "text": "pop current array\nand add to (new) current",
             "style": {
               "color": "orange",
               "size": "medium",
@@ -5221,6 +5201,28 @@
             "style": {
               "color": "yellow",
               "size": "small",
+              "isFilled": true,
+              "dash": "solid",
+              "scale": 1,
+              "font": "mono",
+              "textAlign": "start"
+            }
+          },
+          "a22cf854-5e2d-476f-3e0c-2f231f3ecb49": {
+            "id": "a22cf854-5e2d-476f-3e0c-2f231f3ecb49",
+            "type": "text",
+            "name": "Text",
+            "parentId": "page",
+            "childIndex": 18,
+            "point": [
+              4129.48,
+              -2238.4
+            ],
+            "rotation": 0,
+            "text": "parsing the input is the hardest part...",
+            "style": {
+              "color": "red",
+              "size": "large",
               "isFilled": true,
               "dash": "solid",
               "scale": 1,
@@ -5470,11 +5472,11 @@
             ],
             "distance": 8
           },
-          "bb75d469-b328-44ee-1960-19fab78808da": {
-            "id": "bb75d469-b328-44ee-1960-19fab78808da",
+          "7320d884-a829-456a-3dd8-ca297de72afd": {
+            "id": "7320d884-a829-456a-3dd8-ca297de72afd",
             "type": "arrow",
-            "fromId": "9e732240-6279-4f84-0b23-416db9e1a831",
-            "toId": "00abc8d5-b48e-4fe7-2c6a-c438de4f5409",
+            "fromId": "994e46ec-7d27-4cff-1440-93db9c316448",
+            "toId": "0bd2e9e6-fa1f-4389-370b-408701343954",
             "handleId": "start",
             "point": [
               0.5,
@@ -5482,12 +5484,36 @@
             ],
             "distance": 8
           },
-          "7320d884-a829-456a-3dd8-ca297de72afd": {
-            "id": "7320d884-a829-456a-3dd8-ca297de72afd",
+          "bdfe7b25-b6d6-4aa3-3533-aac3c8891c61": {
+            "id": "bdfe7b25-b6d6-4aa3-3533-aac3c8891c61",
             "type": "arrow",
             "fromId": "994e46ec-7d27-4cff-1440-93db9c316448",
-            "toId": "0bd2e9e6-fa1f-4389-370b-408701343954",
+            "toId": "408929a4-4a51-4cd2-0786-c46d193ec4c2",
+            "handleId": "end",
+            "point": [
+              0.34,
+              0.6
+            ],
+            "distance": 8
+          },
+          "88c415e7-f183-4a99-3502-8bd42a816684": {
+            "id": "88c415e7-f183-4a99-3502-8bd42a816684",
+            "type": "arrow",
+            "fromId": "9e732240-6279-4f84-0b23-416db9e1a831",
+            "toId": "00abc8d5-b48e-4fe7-2c6a-c438de4f5409",
             "handleId": "start",
+            "point": [
+              0.16,
+              0.35
+            ],
+            "distance": 8
+          },
+          "c86c8112-0369-42ef-3564-20c6c65ea296": {
+            "id": "c86c8112-0369-42ef-3564-20c6c65ea296",
+            "type": "arrow",
+            "fromId": "9e732240-6279-4f84-0b23-416db9e1a831",
+            "toId": "408929a4-4a51-4cd2-0786-c46d193ec4c2",
+            "handleId": "end",
             "point": [
               0.5,
               0.5

@@ -13,8 +13,6 @@ export async function partOne(inputFile: string) {
     }
   }
 
-  console.log(correctOrderPairIndices)
-
   return correctOrderPairIndices
     .filter((index) => index !== null)
     .reduce((res, index) => res + index, 0)
@@ -86,17 +84,19 @@ function parseListLine(listLine: string) {
   }
 }
 
+/**
+ * @returns
+ * 1: pair is in the right order
+ * 0: no decision could be made
+ * -1: pair is in the wrong order
+ */
 function comparePair([left, right]: Pair): -1 | 1 | 0 {
   if (typeof left === 'number' && typeof right === 'number') {
-    console.log(`  comparing numbers: ${left} and ${right}`)
-
     if (left < right) {
-      console.log('👍 right order')
       return 1
     }
 
     if (left > right) {
-      console.log('🚫 wrong order')
       return -1
     }
 
@@ -107,7 +107,6 @@ function comparePair([left, right]: Pair): -1 | 1 | 0 {
     for (let i = 0; i < left.length; i++) {
       if (i >= right.length) {
         // right ran out of items first
-        console.log('🚫 wrong order')
         return -1
       }
 
@@ -121,7 +120,6 @@ function comparePair([left, right]: Pair): -1 | 1 | 0 {
 
     if (right.length > left.length) {
       // left ran out of items
-      console.log('👍 right order')
       return 1
     }
   }
