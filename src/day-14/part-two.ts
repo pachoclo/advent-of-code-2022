@@ -5,12 +5,16 @@ export async function partTwo(inputFile: string) {
 
   let rockPaths = parseInputIntoPaths(input)
 
-  let { minX, maxX, minY, maxY } = findGridEdges(rockPaths)
+  let { maxY } = findGridBoundaries(rockPaths)
+
+  let floorRowIdx = maxY + 2
+  let floorWidth = (floorRowIdx + 1) * 2
+  let minX = 500 - floorRowIdx - 1
 
   // Make a grid using what we know
 
-  let rows = maxY - minY + 1
-  let cols = maxX - minX + 1
+  let rows = floorRowIdx + 1
+  let cols = floorWidth
 
   let grid: GridCell[][] = []
 
@@ -21,12 +25,14 @@ export async function partTwo(inputFile: string) {
       grid[r][c] = {
         coordinates: {
           x: minX + c,
-          y: minY + r,
+          y: r,
         },
         content: '.',
       }
     }
   }
+
+  // utility func to find a cell, duh
 
   const findCell = ({ x, y }: Coordinates) => {
     try {
@@ -44,19 +50,21 @@ export async function partTwo(inputFile: string) {
     }
   }
 
+  // Add floor to grid
+  let floorRow = grid[floorRowIdx]
+  floorRow.forEach((cell) => (cell.content = '#'))
+
   // Add sand source to grid
 
-  const sandSource = findCell({ x: 500, y: 0 })!
-  sandSource.content = '+'
-
-  logGrid(grid)
+  const sandSourceCell = findCell({ x: 500, y: 0 })!
+  sandSourceCell.content = '+'
 
   // Simulate sand falling from (500, 0)
 
   let sandGrains = 0
-  let isSandFlowing = false
+  let isSandFlowing = true
 
-  while (!isSandFlowing) {
+  while (isSandFlowing) {
     let cameToRest = false
     sandGrains++
     let sandCoords: Coordinates = {
@@ -65,18 +73,13 @@ export async function partTwo(inputFile: string) {
     }
 
     while (!cameToRest) {
-      let down
-      let downLeft
-      let downRight
-
-      // grab the cells below
-      down = findCell({ x: sandCoords.x, y: sandCoords.y + 1 })
-      downLeft = findCell({ x: sandCoords.x - 1, y: sandCoords.y + 1 })
-      downRight = findCell({ x: sandCoords.x + 1, y: sandCoords.y + 1 })
+      // grab the cells below current sand grain
+      let down = findCell({ x: sandCoords.x, y: sandCoords.y + 1 })
+      let downLeft = findCell({ x: sandCoords.x - 1, y: sandCoords.y + 1 })
+      let downRight = findCell({ x: sandCoords.x + 1, y: sandCoords.y + 1 })
 
       if (!down || !downLeft || !downRight) {
-        isSandFlowing = true
-        break
+        throw new Error('this should not have happened')
       }
 
       // check down
@@ -100,21 +103,26 @@ export async function partTwo(inputFile: string) {
       }
 
       // sand can't move -> come to rest
-      findCell({ x: sandCoords.x, y: sandCoords.y })!.content = 'o'
+      let currentCell = findCell({ x: sandCoords.x, y: sandCoords.y })
+      currentCell!.content = 'o'
       cameToRest = true
 
-      logGrid(grid)
+      if (currentCell === sandSourceCell) {
+        isSandFlowing = false
+      }
     }
   }
 
-  return sandGrains - 1
+  // logGrid(grid)
+
+  return sandGrains
 }
 
 function logGrid(grid: GridCell[][]) {
   console.log('\n')
-  console.log(
-    grid.map((gridRow) => gridRow.map((cell) => cell.content).join('')).join('\n')
-  )
+  for (const row of grid) {
+    console.log(row.map((cell) => cell.content).join(''))
+  }
 }
 
 function parseInputIntoPaths(input: string): Path[] {
@@ -192,7 +200,7 @@ function fillInMissingCoordinates(rockPathCoordinateStack: Path) {
   return expandedCoordinates
 }
 
-function findGridEdges(rockPaths: Path[]) {
+function findGridBoundaries(rockPaths: Path[]) {
   let minY = 0
   let maxY = 0
   let minX = 500
