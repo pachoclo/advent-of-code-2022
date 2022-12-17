@@ -1,17 +1,36 @@
 import { readFile } from 'fs/promises'
 
-export async function partOne(inputFile: string) {
-  let input = await readFile(`${__dirname}/${inputFile}`, 'utf-8')
+export async function partOne(inputFile: string, yValue: number) {
+  const input = await readFile(`${__dirname}/${inputFile}`, 'utf-8')
 
-  let pairs: SensorBeaconPair[] = parseInputIntoPairs(input)
+  let tuples: SensorBeaconTuple[] = parseInputIntoTuples(input)
 
-  console.log(pairs)
+  let minX = Number.MAX_SAFE_INTEGER
+  let maxX = Number.MIN_SAFE_INTEGER
 
-  // calculate manhattan distance for each one of the pairs
+  for (const tuple of tuples) {
+    if (tuple.sensor.x - tuple.md < minX) {
+      minX = tuple.sensor.x - tuple.md
+    }
 
-  // calculate minX and maxX
+    if (tuple.sensor.x + tuple.md > maxX) {
+      maxX = tuple.sensor.x + tuple.md
+    }
+  }
 
-  // for i in range(minX, maxX):
+  const Y = yValue
+  let cannotBeCount = 0
+
+  for (let i = minX; i < maxX; i++) {
+    for (const { sensor, beacon: _, md } of tuples) {
+      if (manhattanDistance(sensor, { x: i, y: Y }) <= md) {
+        cannotBeCount++
+        break
+      }
+    }
+  }
+
+  return cannotBeCount - 1
 }
 
 // --------------------------------------------------------------------------- //
@@ -20,18 +39,19 @@ type Point = {
   y: number
 }
 
-type SensorBeaconPair = [sensor: Point, beacon: Point]
+type SensorBeaconTuple = { sensor: Point; beacon: Point; md: number }
 
-function parseInputIntoPairs(input: string): SensorBeaconPair[] {
+function parseInputIntoTuples(input: string): SensorBeaconTuple[] {
   return input.split('\n').map((line) => {
-    let { sx, sy, bx, by } = line.match(
+    const { sx, sy, bx, by } = line.match(
       /Sensor at x=(?<sx>[\-0-9]+), y=(?<sy>[\-0-9]+): closest beacon is at x=(?<bx>[\-0-9]+), y=(?<by>[\-0-9]+)/
     )!.groups!
 
-    return [
-      { x: Number.parseInt(sx), y: Number.parseInt(sy) },
-      { x: Number.parseInt(bx), y: Number.parseInt(by) },
-    ]
+    let sensor = { x: Number.parseInt(sx), y: Number.parseInt(sy) }
+    let beacon = { x: Number.parseInt(bx), y: Number.parseInt(by) }
+    let md = manhattanDistance(sensor, beacon)
+
+    return { sensor, beacon, md }
   })
 }
 
