@@ -3,57 +3,71 @@ import { readFile } from 'fs/promises'
 export async function partTwo(inputFile: string) {
   const input = await readFile(`${__dirname}/${inputFile}`, 'utf-8')
 
-  const cubes: Point[] = input.split('\n').map((line) => {
+  const solidCubes: Point[] = input.split('\n').map((line) => {
     const [x, y, z] = line.split(',').map((str) => Number.parseInt(str))
     return { x, y, z }
   })
 
-  const cubeSet = new Set<string>()
+  // store coordinates (string form for easier look-up) in a Set
+  const solidCubesSet = new Set<string>(
+    solidCubes.map(({ x, y, z }) => `${x},${y},${z}`)
+  )
 
-  for (const cube of cubes) {
-    const { x, y, z } = cube
-    if (cubeSet.has(`${x},${y},${z}`)) {
-      throw new Error('attempting to add a cube coords that already exist')
+  // calculate bounds for the entire thing
+  const { minX, maxX, minY, maxY, minZ, maxZ } = calculateBounds(solidCubes)
+
+  let surfaceFaces = 0
+
+  // for each solid cube, check if the adjacent cubes are empty (air)
+  for (const solidCube of solidCubes) {
+    const airBlocks = getAdjacentAirBlocks(solidCube, solidCubesSet)
+
+    for (const airBlock of airBlocks) {
+      // one of the cube's faces is next to an air block
+      // we need to find out if that air block can reach the outside
+
+      const q = []
+      q.push(airBlock)
+
+      const visited = new Set<string>()
+
+      let canGetOut = false
+
+      while (q.length > 0) {
+        const { x, y, z }: Point = q.shift() as Point
+
+        if (visited.has(`${x},${y},${z}`)) {
+          continue
+        }
+
+        // test if this block of air is at the boundary
+        if (
+          x >= maxX ||
+          x <= minX ||
+          y >= maxY ||
+          y <= minY ||
+          z >= maxZ ||
+          z <= minZ
+        ) {
+          // YES => we found a surface face
+          canGetOut = true
+          break
+        }
+
+        visited.add(`${x},${y},${z}`)
+
+        // not at the boundary -> test if this air block has a path out
+        // through its neighbor air blocks
+        q.push(...getAdjacentAirBlocks({ x, y, z }, solidCubesSet))
+      }
+
+      if (canGetOut) {
+        surfaceFaces++
+      }
     }
-    cubeSet.add(`${x},${y},${z}`)
   }
 
-  let totalFreeSides = 0
-
-  for (const cube of cubes) {
-    totalFreeSides += calculateNumOfFreeSides(cube, cubeSet)
-  }
-
-  // calculate bounding box for the entire thing
-  console.log(cubes)
-
-  const xSorted = [...cubes.sort((cubeA, cubeB) => cubeA.x - cubeB.x)]
-  const ySorted = [...cubes.sort((cubeA, cubeB) => cubeA.y - cubeB.y)]
-  const zSorted = [...cubes.sort((cubeA, cubeB) => cubeA.z - cubeB.z)]
-
-  console.log(xSorted)
-  console.log(ySorted)
-  console.log(zSorted)
-
-  // what can I get out of each of these sorted arrays?
-  const minX = xSorted.at(0)
-  const maxX = xSorted.at(-1)
-  const minY = ySorted.at(0)
-  const maxY = ySorted.at(-1)
-  const minZ = zSorted.at(0)
-  const maxZ = zSorted.at(-1)
-
-  console.log(minX)
-  console.log(maxX)
-  console.log(minY)
-  console.log(maxY)
-  console.log(minZ)
-  console.log(maxZ)
-  // calculate free sides
-
-  // for each free side of a cube, check if it can see the outside (i.e. there is no other cube blocking the outside)
-
-  return totalFreeSides
+  return surfaceFaces
 }
 
 // --------------------------------------------------------------------------- //
@@ -64,33 +78,40 @@ type Point = {
   z: number
 }
 
-function calculateNumOfFreeSides(cube: Point, cubeSet: Set<string>) {
-  let freeSides = 6
+function getAdjacentAirBlocks(cube: Point, cubeSet: Set<string>) {
+  let freeSides: Point[] = []
 
-  const { x, y, z } = cube
+  const adjacent: Point[] = [
+    { x: cube.x - 1, y: cube.y, z: cube.z },
+    { x: cube.x + 1, y: cube.y, z: cube.z },
+    { x: cube.x, y: cube.y - 1, z: cube.z },
+    { x: cube.x, y: cube.y + 1, z: cube.z },
+    { x: cube.x, y: cube.y, z: cube.z - 1 },
+    { x: cube.x, y: cube.y, z: cube.z + 1 },
+  ]
 
-  // y-adjacent
-  const up: Point = { x, y: y + 1, z }
-  const down: Point = { x, y: y - 1, z }
-
-  // x-adjacent
-  const left: Point = { x: x - 1, y, z }
-  const right: Point = { x: x + 1, y, z }
-
-  // z-adjacent
-  const front: Point = { x, y, z: z + 1 }
-  const back: Point = { x, y, z: z - 1 }
-
-  // check how many of ☝️ these guys exist
-  const adjacentCubes = [up, down, left, right, front, back]
-
-  for (const adjacent of adjacentCubes) {
-    if (!adjacent) continue
-    let adjacentStr = `${adjacent.x},${adjacent.y},${adjacent.z}`
-    if (cubeSet.has(adjacentStr)) {
-      freeSides--
+  for (const { x, y, z } of adjacent) {
+    if (!cubeSet.has(`${x},${y},${z}`)) {
+      freeSides.push({ x, y, z })
     }
   }
 
   return freeSides
+}
+
+export function calculateBounds(cubes: Point[]) {
+  const xSorted = [...cubes.sort((cubeA, cubeB) => cubeA.x - cubeB.x)]
+  const ySorted = [...cubes.sort((cubeA, cubeB) => cubeA.y - cubeB.y)]
+  const zSorted = [...cubes.sort((cubeA, cubeB) => cubeA.z - cubeB.z)]
+
+  const minX = xSorted.at(0)!.x
+  const maxX = xSorted.at(-1)!.x
+
+  const minY = ySorted.at(0)!.y
+  const maxY = ySorted.at(-1)!.y
+
+  const minZ = zSorted.at(0)!.z
+  const maxZ = zSorted.at(-1)!.z
+
+  return { minX, maxX, minY, maxY, minZ, maxZ }
 }

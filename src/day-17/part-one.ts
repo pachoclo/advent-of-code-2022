@@ -114,7 +114,6 @@ type Piece = {
 }
 
 const pieces: Piece[] = [
-  // _
   {
     type: '_',
     height: 1,
@@ -126,7 +125,6 @@ const pieces: Piece[] = [
       { x: 3, y: 0 },
     ],
   } as const,
-  // +
   {
     type: '+',
     height: 3,
@@ -139,7 +137,6 @@ const pieces: Piece[] = [
       { x: 1, y: 2 },
     ],
   } as const,
-  // L
   {
     type: 'L',
     height: 3,
@@ -152,7 +149,6 @@ const pieces: Piece[] = [
       { x: 2, y: 2 },
     ],
   } as const,
-  // |
   {
     type: '|',
     height: 4,
@@ -164,7 +160,6 @@ const pieces: Piece[] = [
       { x: 0, y: 3 },
     ],
   } as const,
-  // []
   {
     type: '[]',
     height: 2,
