@@ -8,7 +8,7 @@ export async function partTwo(inputFile: string) {
     return { x, y, z }
   })
 
-  // store coordinates (string form for easier look-up) in a Set
+  // store coordinates (in string form for easier look-up) in a Set
   const solidCubesSet = new Set<string>(
     solidCubes.map(({ x, y, z }) => `${x},${y},${z}`)
   )
@@ -79,9 +79,9 @@ type Point = {
 }
 
 function getAdjacentAirBlocks(cube: Point, cubeSet: Set<string>) {
-  let freeSides: Point[] = []
+  let airBlocks: Point[] = []
 
-  const adjacent: Point[] = [
+  const adjacentCubes: Point[] = [
     { x: cube.x - 1, y: cube.y, z: cube.z },
     { x: cube.x + 1, y: cube.y, z: cube.z },
     { x: cube.x, y: cube.y - 1, z: cube.z },
@@ -90,13 +90,13 @@ function getAdjacentAirBlocks(cube: Point, cubeSet: Set<string>) {
     { x: cube.x, y: cube.y, z: cube.z + 1 },
   ]
 
-  for (const { x, y, z } of adjacent) {
+  for (const { x, y, z } of adjacentCubes) {
     if (!cubeSet.has(`${x},${y},${z}`)) {
-      freeSides.push({ x, y, z })
+      airBlocks.push({ x, y, z })
     }
   }
 
-  return freeSides
+  return airBlocks
 }
 
 export function calculateBounds(cubes: Point[]) {
